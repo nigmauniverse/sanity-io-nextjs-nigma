@@ -33,10 +33,10 @@ export default function IndexPage(
   return (
     <Container>
       <section>
-        {posts.length ? (
+        <Welcome />
+
+        {!!posts.length && (
           posts.map((post) => <Card key={post._id} post={post} />)
-        ) : (
-          <Welcome />
         )}
       </section>
     </Container>
