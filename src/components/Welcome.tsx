@@ -9,7 +9,7 @@ import DecorationStarsImage from '../assets/decorationStars.png'
 import NigmaPlanetImage from '../assets/NigmaPlanet.svg'
 import NeonBrandImage from '../assets/neon-brand-identity-design-on-tablet.png'
 import CometaImage from '../assets/cometa.svg'
-import MarcasImage from '../assets/marcas.png'
+import MarcasImage from '../assets/Marcas.png'
 import TestimonialsImage from '../assets/Testimonials.svg'
 
 export default function Welcome() {
