@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   --space-0: 0;
   --space-1: 4px;
@@ -53,14 +57,9 @@
 
 html {
   background-color: var(--white);
-  font-family: var(--font-family-sans), var(--font-family-serif), sans-serif;
   -webkit-text-size-adjust: 100%;
   -moz-text-size-adjust: 100%;
   text-size-adjust: 100%;
-}
-
-body {
-  margin: 0;
 }
 
 /* Post page */
@@ -165,9 +164,6 @@ body {
 }
 
 /* Layout */
-.container {
-  margin: 0 auto;
-}
 
 main {
   margin-top: 45px;
@@ -443,4 +439,8 @@ main {
     max-width: 366.5px;
     max-height: 231px;
   }
+}
+
+body {
+  background: linear-gradient(180deg, #000B0C 4.28%, #002023 5.69%, #002023 100%);
 }

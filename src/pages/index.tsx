@@ -32,13 +32,11 @@ export default function IndexPage(
   const [posts] = useLiveQuery<Post[]>(props.posts, postsQuery)
   return (
     <Container>
-      <section>
-        <Welcome />
+      <Welcome />
 
-        {!!posts.length && (
-          posts.map((post) => <Card key={post._id} post={post} />)
-        )}
-      </section>
+      {!!posts.length && (
+        posts.map((post) => <Card key={post._id} post={post} />)
+      )}
     </Container>
   )
 }

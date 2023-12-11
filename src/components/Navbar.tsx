@@ -2,7 +2,7 @@ import ButtonLink from "./ButtonLink";
 
 const Navbar = () => {
 	return (
-		<nav id="header" className="fixed w-full z-10 top-0">
+		<nav id="header" className="fixed w-full z-10 top-0 text-white">
 			<div
 				id="progress"
 				className="h-1 z-20 top-0"

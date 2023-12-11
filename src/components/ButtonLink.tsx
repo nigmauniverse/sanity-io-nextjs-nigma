@@ -5,7 +5,7 @@ type TButtonLinkProps = {
 
 const ButtonLink: React.FC<TButtonLinkProps> = ({ label, href }) => {
 	return (
-		<a href={href} className="bg-yellow-400 py-2 px-6 rounded-full text-base font-bold text-[#002023]">
+		<a href={href} className="bg-secondary-container py-2 px-6 rounded-full text-base font-bold text-[#002023]">
 			{label}
 		</a>
 	)

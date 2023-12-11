@@ -1,14 +1,12 @@
-import Link from 'next/link'
+import Navbar from '~/components/Navbar'
 
 export default function Container({ children }: { children: React.ReactNode }) {
   return (
-    <div className="container">
-      <header className="header">
-        <Link className="header__title" href="/">
-          Next.js + Sanity
-        </Link>
-      </header>
-      <main>{children}</main>
+    <>
+      <Navbar />
+
+      <main className="w-full text-white">{children}</main>
+
       <footer className="footer">
         <p className="footer__text">
           Made with{' '}
@@ -30,6 +28,6 @@ export default function Container({ children }: { children: React.ReactNode }) {
           at Sanity
         </p>
       </footer>
-    </div>
+    </>
   )
 }
