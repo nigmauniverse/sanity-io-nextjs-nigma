@@ -14,6 +14,8 @@ import SunImage from '../assets/sun.png';
 import NeonWomanImage from '../assets/neon-young-woman.svg';
 import CopyRightImage from '../assets/copyright.png';
 
+const InstagramLink = 'https://www.instagram.com/nigma.co/';
+
 export default function Welcome() {
   return (
     <main className="relative [background:linear-gradient(180deg,_#000b0c_4.28%,_#002023_5.69%,_#002023)] w-full h-[746.5rem] overflow-hidden text-center text-[2.75rem] text-m3-sys-light-secondary-container font-montserrat">
@@ -465,7 +467,7 @@ export default function Welcome() {
           </div>
         </div>
       </div>
-      <div className="absolute top-[0rem] left-[0rem] w-[90rem] h-[49.56rem] text-left text-[3.56rem] text-m3-white">
+      <section className="absolute top-[0rem] left-[0rem] h-[49.56rem] text-left text-[3.56rem] text-m3-white">
         <div className="absolute top-[7.88rem] left-[8.63rem] rounded-[50%] bg-darkolivegreen [backdrop-filter:blur(10px)] box-border w-[23.19rem] h-[23.19rem] opacity-[0.5] border-[1px] border-solid border-teal" />
         <div className="absolute top-[calc(50%_-_80.5px)] left-[12.5rem] flex flex-col items-start justify-start gap-[2rem]">
           <div className="relative tracking-[-0.25px] leading-[4rem] flex items-center w-[40rem]">
@@ -584,11 +586,12 @@ export default function Welcome() {
             </Link>
 
             <div className="flex flex-row items-center justify-end py-[0rem] px-[0.5rem] gap-[1rem]">
-              <Image
-                className="w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
-                alt="instagram"
-                src={InstagramImage}
-              />
+              <Link href={InstagramLink} className="w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0">
+                <Image
+                  alt="instagram"
+                  src={InstagramImage}
+                />
+              </Link>
               <Image
                 className="w-[1.25rem] h-[1.25rem] overflow-hidden shrink-0"
                 alt="twitter"
@@ -619,7 +622,7 @@ export default function Welcome() {
             </div>
           </div>
         </nav>
-      </div>
+      </section>
 
       <div className="absolute top-[83.44rem] left-[calc(50%_-_720px)] [background:linear-gradient(180deg,_#000,_rgba(18,_31,_37,_0))] [backdrop-filter:blur(4px)] w-[90rem] overflow-hidden flex flex-col items-start justify-start py-[5.25rem] px-[12.5rem] box-border gap-[3.5rem] text-left text-[1.75rem]">
         <div className="absolute my-0 mx-[!important] top-[53.98rem] left-[12.51rem] rounded-[50%] [background:linear-gradient(128.69deg,_rgba(255,_230,_10,_0.34),_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[22.42rem] h-[22.42rem] [transform:_rotate(135deg)] [transform-origin:0_0] opacity-[0.3] z-[0]" />
@@ -1506,23 +1509,22 @@ export default function Welcome() {
       </div>
 
       {/* Footer */}
-      <div className="absolute bottom-0 left-0 bg-m3-sys-light-inverse-surface w-full flex flex-col items-start justify-start py-[5.25rem] px-[12.5rem] box-border gap-[3rem] text-left text-[0.88rem] text-m3-sys-light-tertiary-container">
+      <footer className="absolute bottom-0 left-0 bg-m3-sys-light-inverse-surface w-full flex flex-col items-start justify-start py-[5.25rem] px-[12.5rem] box-border gap-[3rem] text-left text-[0.88rem] text-m3-sys-light-tertiary-container">
         <div className="flex flex-row items-start justify-start gap-[1.5rem]">
           <div className="flex flex-col items-start justify-start gap-[3rem]">
             <div className="flex flex-col items-start justify-start gap-[1.5rem]">
               <div className="h-[4.06rem] flex flex-col items-end justify-center gap-[0.63rem]">
-                <div className="h-[1.88rem] flex flex-col items-center justify-center">
-                  <img
-                    className="relative w-[6.69rem] h-[1.88rem] object-cover"
-                    alt=""
-                    src="/logo-horizontal-1@2x.png"
-                  />
-                </div>
+                <Image
+                  className="relative w-[6.69rem] h-[1.88rem] object-cover"
+                  alt=""
+                  src={LogoNigmaImage}
+                  quality={100}
+                />
                 <div className="relative w-[4.81rem] h-[2.5rem] hidden">
-                  <img
+                  <Image
                     className="absolute top-[0rem] left-[0rem] w-[4.81rem] h-[2.5rem] object-cover hidden"
                     alt=""
-                    src="/logo-nigma-universe-sin-fondo@2x.png"
+                    src={LogoNigmaImage}
                   />
                 </div>
               </div>
@@ -1595,6 +1597,7 @@ export default function Welcome() {
               </div>
             </div>
           </div>
+
           <div className="w-[48.38rem] flex flex-row flex-wrap items-start justify-start gap-[1.5rem] text-[1.38rem] text-m3-sys-light-secondary-container">
             <div className="flex flex-col items-start justify-start gap-[1.5rem]">
               <div className="w-[9.56rem] h-[4.25rem] flex flex-col items-start justify-start gap-[0.5rem]">
@@ -1786,6 +1789,7 @@ export default function Welcome() {
             </div>
           </div>
         </div>
+
         <div className="self-stretch flex flex-row items-center justify-between text-[1rem]">
           <div className="flex flex-row items-center justify-start gap-[0.5rem]">
             <Image
@@ -1801,11 +1805,13 @@ export default function Welcome() {
             </div>
           </div>
           <div className="flex flex-row items-center justify-end gap-[1rem]">
+            <Link href={InstagramLink}>
             <Image
               className="w-[1.5rem] h-[1.5rem] shrink-0"
               alt=""
               src={InstagramImage}
             />
+            </Link>
             <Image
               className="w-[1.5rem] h-[1.5rem] shrink-0"
               alt=""
@@ -1828,7 +1834,7 @@ export default function Welcome() {
             />
           </div>
         </div>
-      </div>
+      </footer>
     </main>
   );
 }
