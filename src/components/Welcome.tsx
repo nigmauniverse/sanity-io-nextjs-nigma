@@ -30,110 +30,139 @@ import SubtractImage from '../assets/Subtract.svg'
 import SolarSystemImage from '../assets/solarsystem.png'
 import Silueta3Image from '../assets/silueta3.png'
 import BgGradientImage from '../assets/bggradient1.svg'
+import BgGradient2Image from '../assets/bg_gradient2.svg'
+import BgSiluetaImage from '../assets/bg_silueta4.png'
+import BrandAviancaImage from '../assets/brand_avianca.svg'
+import BrandLeoImage from '../assets/brand_leo.svg'
+import BrandBancolombiaImage from '../assets/brand_bancolombia.svg'
+import BrandCocaColaImage from '../assets/branc_coca-cola.svg'
+import BrandUnalImage from '../assets/brand_unal.svg'
+import BrandEcciImage from '../assets/brand_ecci.svg'
+import BrandCelsiaImage from '../assets/brand_celsia.svg'
+import BrandSuraImage from '../assets/brand_sura.svg'
+import BrandCencosudImage from '../assets/brand_cencosud.svg'
+import BrandTridentImage from '../assets/brand_trident.svg'
+import BrandSemanaImage from '../assets/brand_semana.svg'
+import BrandSamsungImage from '../assets/brand_samsung.svg'
+import BrandOxxoImage from '../assets/brand_oxxo.svg'
+import BgRelojArena from '../assets/bg_reloj_arena.png'
+import BgNavegaImage from '../assets/bg_navega.png'
+import IconEsotericImage from '../assets/icons-esoteric.png'
+import IconStarImage from '../assets/icons-star.png'
+import IconBulbImage from '../assets/icons-bulb.png'
+import IconRocketImage from '../assets/icons-rocket.png'
+import IconPhoneImage from '../assets/icon_phone.svg'
+import IconArrobaImage from '../assets/icon_arroba.svg'
+import IconLocationImage from '../assets/icon_location.svg'
+import ExpBookImage from '../assets/exp_book.png'
+import ExpBookAstroImage from '../assets/book_astro.png'
+import ExpDicotomiaImage from '../assets/exp_dicotomia.png'
+import ExpSubaImage from '../assets/exp_suba.png'
+import ExpCunImage from '../assets/exp_cun.png'
+import ExpUnicieoImage from '../assets/exp_uniceo.png'
+import ObjMaskImage from '../assets/obj_mask.png'
+import ObjThinStarsImage from '../assets/obj_thin_stars.png'
+import OneImage from '../assets/1.png'
+import TwoImage from '../assets/2.png'
+import ThreeImage from '../assets/3.png'
+import FourImage from '../assets/4.png'
 
-const InstagramLink = 'https://www.instagram.com/nigma.co/'
-const FacebookLink = 'https://www.facebook.com/nigma.co'
-const TwitterLink = 'https://twitter.com/nigma_co'
-const YouTubeLink = 'https://www.youtube.com/channel/UCXy5B0xqj3Jgq7Q8kKZj7WQ'
-const TikTokLink = 'https://www.tiktok.com/@nigma_co?lang=es'
+import ExperienceCard from './ExperienceCard'
+
+const InstagramLink = 'https://www.instagram.com/nigma.emerge'
+const FacebookLink = 'https://www.facebook.com/nigma.emerge'
+const TwitterLink = 'https://twitter.com/nigma_emerge'
+const YouTubeLink = 'https://www.youtube.com/@nigmaemerge3906'
+const TikTokLink = 'https://www.tiktok.com/@nigmaemerge?lang=es'
+
+/**
+ Threads: https://www.threads.net/@nigma.emerge
+ */
 
 export default function Welcome() {
   return (
-    <main
-      className="relative [background:linear-gradient(180deg,_#000b0c_4.28%,_#002023_5.69%,_#002023)] w-full h-[746.5rem] overflow-hidden text-center text-[2.75rem] text-m3-sys-light-secondary-container font-montserrat">
-      <div className="absolute top-[478.19rem] left-[calc(50%_-_720px)] w-[90rem] h-[53.81rem]">
-        <img
-          className="absolute top-[-0.02rem] left-[0rem] w-[90rem] h-[54.4rem] object-cover"
-          alt=""
-          src="/mask-group@2x.png"
-        />
-        <div className="absolute top-[10.75rem] left-[calc(50%_-_391px)] leading-[120%] font-semibold">
-          ¿Cuál es nuestro polvo de estrella?
-        </div>
-        <div className="absolute top-[40.06rem] left-[12.5rem] flex flex-row items-start justify-start gap-[1rem]">
-          <div
-            className="shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] w-[3rem] h-[3rem] flex flex-col items-center justify-center p-[0.25rem] box-border">
+    <main className="relative [background:linear-gradient(180deg,_#000b0c_4.28%,_#002023_5.69%,_#002023)] w-full h-[746.5rem] overflow-hidden text-center text-[2.75rem] text-m3-sys-light-secondary-container font-montserrat">
+      <div className="absolute top-[478.19rem] left-0 w-screen h-[53.81rem]" style={{
+        backgroundImage: `url(${BgRelojArena.src})`,
+        backgroundSize: 'cover',
+      }}>
+        <div className="container mx-auto mt-32">
+          <div className="leading-[120%] font-semibold mb-6">
+            ¿Cuál es nuestro polvo de estrella?
+          </div>
+
+          <div className="flex overflow-x-auto justify-start gap-6 text-left text-[1.38rem] text-m3-sys-light-tertiary-container mb-6">
+            <div className="self-stretch rounded-2xl bg-gray-100 shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] overflow-hidden flex flex-row items-center justify-start py-[4rem] px-[2rem] gap-[1rem] min-w-min">
+              <div className="relative leading-[1.75rem] flex items-center w-[19.5rem]">
+                La misión de Nigma no se reduce a producir objetos sin vida, estáticos.
+              </div>
+              <img
+                className="relative w-[12.5rem] h-[12.5rem] object-cover"
+                alt=""
+                src="/obje--capa@2x.png"
+              />
+            </div>
+
+            <div className="rounded-2xl bg-gray-100 shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] overflow-hidden flex flex-row items-center justify-start py-[4rem] px-[2rem] gap-[2rem] min-w-min">
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.75rem] flex items-center w-[19.5rem]">
+                  Cada vez que iniciamos un nuevo viaje hacia nuestra próxima
+                  aventura creativa sabemos que vamos a traspasar la frontera de
+                  los universos habituales.
+                </div>
+              </div>
+              <img
+                className="relative w-[12.5rem] h-[12.5rem] object-cover"
+                alt=""
+                src="/patron-2@2x.png"
+              />
+            </div>
+
+            <div className="self-stretch rounded-2xl bg-gray-100 shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] overflow-hidden flex flex-row items-center justify-start py-[4rem] px-[2rem] gap-[2rem] min-w-min">
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.75rem] flex items-center w-[19.5rem]">
+                  Y vamos a abarcar una propuesta mucho más amplia siempre en
+                  beneficio de la humanidad
+                </div>
+              </div>
+              <img
+                className="relative w-[12.5rem] h-[12.5rem] object-cover"
+                alt=""
+                src="/obje-3@2x.png"
+              />
+            </div>
+
+            <div className="rounded-2xl bg-gray-100 shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] overflow-hidden flex flex-row items-center justify-start py-[4rem] px-[2rem] gap-[2rem]">
+              <div className="flex flex-col items-start justify-start">
+                <div className="relative leading-[1.75rem] flex items-center w-[19.5rem]">
+                  Nuestro sello BIC nos acredita como “Empresa con propósito”.
+                  Siempre hemos sido un proyecto que la da mayor prioridad al
+                  propósito social y ambiental.
+                </div>
+              </div>
+              <img
+                className="relative w-[12.5rem] h-[12.5rem] object-cover"
+                alt=""
+                src="/obje-4@2x.png"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-row items-start justify-start gap-[1rem]">
             <div
-              className="rounded-81xl bg-m3-sys-light-primary overflow-hidden flex flex-row items-center justify-center">
-              <div className="flex flex-row items-center justify-center p-[0.5rem]">
-                <img
-                  className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
-                  alt=""
-                  src="/icon.svg"
-                />
+              className="rounded-81xl bg-m3-sys-light-primary shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] w-[3rem] h-[3rem] flex flex-col items-center justify-center p-[0.25rem]">
+              <div
+                className="flex flex-row items-center justify-center p-[0.5rem] relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0 text-white">
+                {'<'}
               </div>
             </div>
-          </div>
-          <div
-            className="shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] w-[3rem] h-[3rem] flex flex-col items-center justify-center p-[0.25rem] box-border">
             <div
-              className="rounded-81xl bg-m3-sys-light-primary overflow-hidden flex flex-row items-center justify-center">
-              <div className="flex flex-row items-center justify-center p-[0.5rem]">
-                <img
-                  className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
-                  alt=""
-                  src="/icon1.svg"
-                />
+              className="rounded-81xl bg-m3-sys-light-primary shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] w-[3rem] h-[3rem] flex flex-col items-center justify-center p-[0.25rem]">
+              <div
+                className="flex flex-row items-center justify-center p-[0.5rem] relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0 text-white">
+                {'>'}
               </div>
             </div>
-          </div>
-        </div>
-        <div
-          className="absolute top-[17.56rem] left-[12.5rem] flex flex-row items-start justify-start gap-6 text-left text-[1.38rem] text-m3-sys-light-tertiary-container">
-          <div
-            className="self-stretch rounded-2xl bg-gray-100 shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] overflow-hidden flex flex-row items-center justify-start py-[4rem] px-[2rem] gap-[1rem]">
-            <div className="relative leading-[1.75rem] flex items-center w-[19.5rem]">
-              La misión de Nigma no se reduce a producir objetos sin vida, estáticos.
-            </div>
-            <img
-              className="relative w-[12.5rem] h-[12.5rem] object-cover"
-              alt=""
-              src="/obje--capa@2x.png"
-            />
-          </div>
-          <div
-            className="rounded-2xl bg-gray-100 shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] overflow-hidden flex flex-row items-center justify-start py-[4rem] px-[2rem] gap-[2rem]">
-            <div className="flex flex-col items-start justify-start">
-              <div className="relative leading-[1.75rem] flex items-center w-[19.5rem]">
-                Cada vez que iniciamos un nuevo viaje hacia nuestra próxima
-                aventura creativa sabemos que vamos a traspasar la frontera de
-                los universos habituales.
-              </div>
-            </div>
-            <img
-              className="relative w-[12.5rem] h-[12.5rem] object-cover"
-              alt=""
-              src="/patron-2@2x.png"
-            />
-          </div>
-          <div
-            className="self-stretch rounded-2xl bg-gray-100 shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] overflow-hidden flex flex-row items-center justify-start py-[4rem] px-[2rem] gap-[2rem]">
-            <div className="flex flex-col items-start justify-start">
-              <div className="relative leading-[1.75rem] flex items-center w-[19.5rem]">
-                Y vamos a abarcar una propuesta mucho más amplia siempre en
-                beneficio de la humanidad
-              </div>
-            </div>
-            <img
-              className="relative w-[12.5rem] h-[12.5rem] object-cover"
-              alt=""
-              src="/obje-3@2x.png"
-            />
-          </div>
-          <div
-            className="rounded-2xl bg-gray-100 shadow-[0px_8px_12px_6px_rgba(0,_0,_0,_0.15),_0px_4px_4px_rgba(0,_0,_0,_0.3)] overflow-hidden flex flex-row items-center justify-start py-[4rem] px-[2rem] gap-[2rem]">
-            <div className="flex flex-col items-start justify-start">
-              <div className="relative leading-[1.75rem] flex items-center w-[19.5rem]">
-                Nuestro sello BIC nos acredita como “Empresa con propósito”.
-                Siempre hemos sido un proyecto que la da mayor prioridad al
-                propósito social y ambiental.
-              </div>
-            </div>
-            <img
-              className="relative w-[12.5rem] h-[12.5rem] object-cover"
-              alt=""
-              src="/obje-4@2x.png"
-            />
           </div>
         </div>
       </div>
@@ -157,75 +186,47 @@ export default function Welcome() {
         <div className="w-screen flex flex-col items-start justify-start gap-[2rem] opacity-[0.6] z-[2]">
           <div className="self-stretch flex flex-col items-start justify-start">
             <div className="flex flex-row items-center justify-center gap-[2.5rem]">
-              <img
-                className="relative w-[5.15rem] h-[2.38rem] overflow-hidden shrink-0"
+              <Image
+                className="w-[5.15rem] h-[2.38rem] shrink-0"
                 alt=""
-                src="/frame.svg"
+                src={BrandOxxoImage}
               />
-              <img
-                className="relative w-[7.53rem] h-[2.5rem] overflow-hidden shrink-0"
+              <Image
+                className="w-[7.53rem] h-[2.5rem] shrink-0"
                 alt=""
-                src="/frame1.svg"
+                src={BrandSamsungImage}
               />
-              <img
-                className="relative w-[9.6rem] h-[2.25rem] overflow-hidden shrink-0"
-                alt=""
-                src="/frame2.svg"
+              <Image
+                className="w-[9.6rem] h-[2.25rem] shrink-0"
+                alt="avianca"
+                src={BrandAviancaImage}
               />
-              <img
-                className="relative w-[8.74rem] h-[2.75rem] overflow-hidden shrink-0"
-                alt=""
-                src="/frame3.svg"
+              <Image
+                className="w-[8.74rem] h-[2.75rem] shrink-0"
+                alt="leo"
+                src={BrandLeoImage}
               />
-              <img
-                className="relative w-[9.69rem] h-[1.25rem] overflow-hidden shrink-0"
-                alt=""
-                src="/bancolombia-sa-logo.svg"
+              <Image
+                className="w-[9.69rem] h-[1.25rem] shrink-0"
+                alt="bancolombia"
+                src={BrandBancolombiaImage}
               />
-              <img
-                className="relative w-[6.05rem] h-[2rem] overflow-hidden shrink-0"
-                alt=""
-                src="/cocacolalogo40dae9byq3-brandlogosnet.svg"
+              <Image
+                className="w-[6.05rem] h-[2rem] shrink-0"
+                alt="coca-cola"
+                src={BrandCocaColaImage}
               />
             </div>
           </div>
           <div className="self-stretch flex flex-col items-end justify-center">
             <div className="h-[2.75rem] flex flex-row items-center justify-start gap-[2.5rem]">
-              <img
-                className="relative w-[5.64rem] h-[2.5rem] overflow-hidden shrink-0"
-                alt=""
-                src="/unal.svg"
-              />
-              <img
-                className="relative w-[10.18rem] h-[2.5rem] overflow-hidden shrink-0"
-                alt=""
-                src="/universidad-ecci.svg"
-              />
-              <img
-                className="relative w-[6.89rem] h-[2rem] overflow-hidden shrink-0"
-                alt=""
-                src="/celsiaseeklogocom-1.svg"
-              />
-              <img
-                className="relative w-[5.78rem] h-[2rem] overflow-hidden shrink-0"
-                alt=""
-                src="/sura.svg"
-              />
-              <img
-                className="relative w-[4rem] h-[2.19rem] overflow-hidden shrink-0"
-                alt=""
-                src="/cencosud-1.svg"
-              />
-              <img
-                className="relative w-[6.5rem] h-[2.19rem] overflow-hidden shrink-0"
-                alt=""
-                src="/trident.svg"
-              />
-              <img
-                className="relative w-[7.56rem] h-[1.5rem]"
-                alt=""
-                src="/vector.svg"
-              />
+              <Image className="w-[5.64rem] h-[2.5rem] shrink-0" alt="universidad nacional" src={BrandUnalImage} />
+              <Image className="w-[10.18rem] h-[2.5rem] shrink-0" alt="universidad ecci" src={BrandEcciImage} />
+              <Image className="w-[6.89rem] h-[2rem] shrink-0" alt="celsia" src={BrandCelsiaImage} />
+              <Image className="w-[5.78rem] h-[2rem] shrink-0" alt="sura" src={BrandSuraImage} />
+              <Image className="w-[4rem] h-[2.19rem] shrink-0" alt="cencosud" src={BrandCencosudImage} />
+              <Image className="w-[6.5rem] h-[2.19rem] shrink-0" alt="trident" src={BrandTridentImage} />
+              <Image className="w-[7.56rem] h-[1.5rem]" alt="semana" src={BrandSemanaImage} />
             </div>
           </div>
         </div>
@@ -236,15 +237,15 @@ export default function Welcome() {
         />
         <div
           className="absolute my-0 top-[-44.87rem] left-[62.04rem] rounded-[50%] [background:linear-gradient(213.81deg,_#020200,_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[57.69rem] h-[57.69rem] [transform:_rotate(15deg)] [transform-origin:0_0] opacity-[0.32] z-[4]" />
-        <img
+        <Image
           className="absolute my-0 top-[9.44rem] left-[6.19rem] w-[11.5rem] h-[11.5rem] object-cover opacity-[0.5] z-[5]"
           alt=""
-          src="/2-patron-pp@2x.png"
+          src={PatternStarsImage}
         />
-        <img
+        <Image
           className="absolute my-0 top-[13.63rem] left-[82rem] w-[6.25rem] h-[6.25rem] object-cover opacity-[0.5] z-[6]"
           alt=""
-          src="/2-patron-pp1@2x.png"
+          src={PatternStarsImage}
         />
       </section>
       <img
@@ -429,7 +430,7 @@ export default function Welcome() {
             />
           </div>
           <div
-            className="w-[31.75rem] flex flex-col items-center justify-start gap-[1rem] text-[1rem] text-m3-sys-light-tertiary-container">
+            className="w-[31.75rem] flex flex-col items-center justify-start gap-[1rem] text-base text-m3-sys-light-tertiary-container">
             <img
               className="relative w-[25rem] h-[25rem]"
               alt=""
@@ -466,7 +467,7 @@ export default function Welcome() {
           <div
             className="self-stretch relative leading-[2.25rem] font-medium">{`Conoce todos los mundos que podemos alcanzar `}</div>
           <div
-            className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-[1rem] text-m3-sys-light-on-primary-container">
+            className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-base text-m3-sys-light-on-primary-container">
             <div className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
               <div className="relative tracking-[0.1px] leading-[1.25rem] font-semibold">
                 Explora aquí
@@ -475,30 +476,32 @@ export default function Welcome() {
           </div>
         </div>
       </div>
-      <section className="absolute top-[47.94rem] left-[0rem] w-[90rem] h-[35.5rem] text-left text-[2.25rem] text-m3-sys-light-tertiary-container">
-        <div
-          className="absolute top-[0rem] left-[calc(50%_-_720px)] w-[90rem] flex flex-row items-center justify-start py-[5.25rem] px-[12.5rem] box-border gap-6">
+      <section className="absolute top-[47.94rem] left-0 w-screen h-[35.5rem] text-left text-[2.25rem] text-m3-sys-light-tertiary-container">
+        <div className="w-screen mx-auto container flex flex-row items-center justify-start py-[5.25rem] gap-6">
           <Image
             className="relative w-[25rem] h-[25rem] overflow-hidden shrink-0"
             alt="neon"
             src={NeonWomanImage}
           />
-          <div className="flex-1 flex flex-col items-start justify-start gap-[3.5rem]">
-            <div className="relative leading-[2.75rem] font-medium flex items-center w-[36.94rem]">
+
+          <div className="w-full">
+            <div className="leading-[2.75rem] font-medium flex items-center mb-8">
               Viaja a distintos universos navegando con nosotros.
             </div>
-            <div className="flex flex-row items-start justify-start gap-[1rem]">
-              <div className="rounded-81xl bg-m3-sys-light-primary overflow-hidden flex flex-row items-center justify-center w-10 h-10 text-base">
-                {'<'}
-              </div>
 
-              <div className="rounded-81xl bg-m3-sys-light-primary overflow-hidden flex flex-row items-center justify-center w-10 h-10 text-base">
+            <div className="flex flex-row items-start justify-start gap-[1rem]">
+              <button type="button" className="block rounded-81xl bg-m3-sys-light-primary overflow-hidden flex flex-row items-center justify-center w-10 h-10 text-base">
+                {'<'}
+              </button>
+
+              <button type="button" className="block rounded-81xl bg-m3-sys-light-primary overflow-hidden flex flex-row items-center justify-center w-10 h-10 text-base">
                 {'>'}
-              </div>
+              </button>
             </div>
           </div>
         </div>
       </section>
+
       <section className="absolute top-[0rem] left-[0rem] h-[49.56rem] text-left text-[3.56rem] text-m3-white">
         <div
           className="absolute top-[7.88rem] left-[8.63rem] rounded-[50%] bg-darkolivegreen [backdrop-filter:blur(10px)] box-border w-[23.19rem] h-[23.19rem] opacity-[0.5] border-[1px] border-solid border-teal" />
@@ -515,7 +518,7 @@ export default function Welcome() {
           </span>
 
           <div
-            className="rounded-81xl bg-m3-sys-light-secondary-container h-[3.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-center text-[1rem] text-m3-sys-light-on-primary-container">
+            className="rounded-81xl bg-m3-sys-light-secondary-container h-[3.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-center text-base text-m3-sys-light-on-primary-container">
             <div className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
               <div className="leading-[1.25rem] font-semibold">
                 Acompáñanos
@@ -530,7 +533,7 @@ export default function Welcome() {
         <div
           className="absolute top-[17.98rem] left-[66.44rem] rounded-[50%] [background:linear-gradient(128.69deg,_rgba(255,_230,_10,_0.34),_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[22.42rem] h-[22.42rem] [transform:_rotate(45deg)] [transform-origin:0_0] opacity-[0.5]" />
         <Image
-          className="absolute top-[4.81rem] -right-10 w-[57.84rem] h-[39.25rem] object-cover"
+          className="absolute top-32 xl:top-[4.8rem] -right-10 w-[43rem] h-[30rem] xl:w-[57rem] xl:h-[39rem] object-cover"
           alt="hero image"
           src={HeroImage}
           priority
@@ -707,7 +710,7 @@ export default function Welcome() {
             />
           </div>
           <div
-            className="flex flex-col items-center justify-start gap-[1rem] text-[1rem] text-m3-sys-light-tertiary-container">
+            className="flex flex-col items-center justify-start gap-[1rem] text-base text-m3-sys-light-tertiary-container">
             <Image
               className="w-[25rem] h-[25rem]"
               alt=""
@@ -746,7 +749,7 @@ export default function Welcome() {
           <div
             className="self-stretch relative leading-[2.25rem] font-medium z-[1]">{`Conoce todos los mundos que podemos alcanzar `}</div>
           <div
-            className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center z-[2] text-[1rem] text-m3-sys-light-on-primary-container">
+            className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center z-[2] text-base text-m3-sys-light-on-primary-container">
             <div className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
               <div className="relative tracking-[0.1px] leading-[1.25rem] font-semibold">
                 Explora aquí
@@ -842,7 +845,7 @@ export default function Welcome() {
                 Pasamos de estar en 0 a tener un alto estándar de una plataforma
                 e-learning y sus objetos de virtualización de aprendizaje.
               </div>
-              <div className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] font-montserrat">
+              <div className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] font-montserrat">
                 - Camilo Rojas, Coordinador Unidad de Virtualización UniCIEO
               </div>
             </div>
@@ -900,10 +903,10 @@ export default function Welcome() {
           alt=""
           src="/group-26086169.svg"
         />
-        <img
-          className="absolute top-[-0.06rem] left-[0rem] rounded-t-563xl-5 rounded-b-none w-[90rem] h-[68rem] object-cover mix-blend-overlay"
+        <Image
+          className="absolute top-0 left-0 rounded-b-none w-screen h-[68rem] object-cover mix-blend-overlay"
           alt=""
-          src="/rectangle@2x.png"
+          src={BgNavegaImage}
         />
         <div
           className="absolute top-[0rem] left-[calc(50%_-_584px)] rounded-t-37xl rounded-b-none flex flex-row items-start justify-start py-[5.25rem] px-[4rem] gap-[7.06rem]">
@@ -911,88 +914,73 @@ export default function Welcome() {
             <div className="relative leading-[120%] font-semibold flex items-center w-[29.25rem] z-[0]">
               Navega con nosotros por esta galaxia de proyectos
             </div>
-            <img
+            <Image
               className="absolute my-0 top-[14.38rem] left-[-4.69rem] w-[38.13rem] h-[38.13rem] object-cover z-[1]"
               alt=""
-              src="/patron-41@2x.png"
+              src={ObjThinStarsImage}
             />
-            <img
+            <Image
               className="absolute my-0 top-[13.44rem] left-[1.31rem] w-[26.19rem] h-[26.19rem] object-cover z-[2]"
               alt=""
-              src="/obje-2@2x.png"
+              src={ObjMaskImage}
             />
           </div>
           <div
             className="w-[28.69rem] flex flex-col items-start justify-start gap-[2rem] text-[3.56rem] text-m3-sys-light-primary-container">
-            <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
-              <div className="self-stretch flex flex-col items-start justify-start">
-                <b
-                  className="self-stretch relative tracking-[-0.25px] leading-[120%] [background:linear-gradient(180deg,_#ffe083_13.02%,_rgba(240,_201,_85,_0))] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-                  1.
-                </b>
-                <div className="self-stretch relative text-[1.75rem] leading-[120%] font-medium mt-[-0.5rem]">
-                  El mejor equipo
-                </div>
+            <div className="">
+              <Image src={OneImage} alt="1" className="mb-1" />
+
+              <div className="text-[1.75rem] leading-[120%] font-medium">
+                El mejor equipo
               </div>
-              <div
-                className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
+
+              <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
                 Tenemos un grupo que está a la altura para llevar al máximo el
                 alcance de cualquier proyecto.
-              </div>
+              </p>
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
-              <div className="self-stretch flex flex-col items-start justify-start">
-                <b
-                  className="self-stretch relative tracking-[-0.25px] leading-[120%] [background:linear-gradient(180deg,_#ffe083,_rgba(255,_224,_131,_0))] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-                  2.
-                </b>
-                <div className="self-stretch relative text-[1.75rem] leading-[120%] font-medium mt-[-0.5rem]">
-                  Conexiones estratégicas
-                </div>
+
+            <div>
+              <Image src={TwoImage} alt="2" className="mb-1" />
+
+              <div className="text-[1.75rem] leading-[120%] font-medium">
+                Conexiones estratégicas
               </div>
-              <div
-                className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
+
+              <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
                 Contamos con una red de difusión alimentada por aliados fuertes
                 que nos dan la infraestructura ideal para llevar nuestras ideas
                 a más lugares de forma sorprendente
-              </div>
+              </p>
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
-              <div className="self-stretch flex flex-col items-start justify-start">
-                <b
-                  className="self-stretch relative tracking-[-0.25px] leading-[120%] [background:linear-gradient(180deg,_#ffe083,_rgba(255,_224,_131,_0))] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-                  3.
-                </b>
-                <div
-                  className="self-stretch relative text-[1.75rem] leading-[120%] font-medium mt-[-0.5rem]">{`Experiencia sideral `}</div>
+
+            <div>
+              <Image src={ThreeImage} alt="3" className="mb-1" />
+              <div className="text-[1.75rem] leading-[120%] font-medium">
+                Experiencia sideral
               </div>
-              <div
-                className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
+              <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
                 Tenemos la fusión profesional de más alto nivel, gracias a
                 nuestro trabajo con grandes clientes, marcas e instituciones
-              </div>
+              </p>
             </div>
-            <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
-              <div className="self-stretch flex flex-col items-start justify-start">
-                <b
-                  className="self-stretch relative tracking-[-0.25px] leading-[120%] [background:linear-gradient(180deg,_#ffe083,_rgba(255,_224,_131,_0))] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent]">
-                  4.
-                </b>
-                <div className="self-stretch relative text-[1.75rem] leading-[120%] font-medium mt-[-0.5rem]">
-                  Estrategias de vanguardia
-                </div>
+
+            <div>
+              <Image src={FourImage} alt="4" className="mb-1" />
+              <div className="text-[1.75rem] leading-[120%] font-medium">
+                Estrategias de vanguardia
               </div>
-              <div
-                className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
+              <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
                 Estamos preparados para articular cada proyecto adaptándonos a
                 sus necesidades gracias a la aplicación profesional de
                 metodologías ágiles y de diseño centrados en el beneficio de la
                 humanidad
-              </div>
+              </p>
             </div>
           </div>
         </div>
       </div>
+
       <div className="absolute top-[334.94rem] left-0 w-screen h-[148.63rem] overflow-hidden">
         <Image
           className="relative w-full h-[148.39rem] object-cover"
@@ -1031,206 +1019,58 @@ export default function Welcome() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 z-[5] text-left text-[2rem] text-m3-white">
-            <div
-              className="rounded-2xl h-[37.81rem] overflow-hidden shrink-0 flex flex-row items-end justify-start relative gap-[0.63rem]">
-              <img
-                className="self-stretch relative max-h-full w-[31.75rem] object-cover z-[0]"
-                alt=""
-                src="/astro-23@2x.png"
-              />
-              <div
-                className="my-0 absolute bottom-[0rem] left-[calc(50%_-_254px)] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(0,_0,_0,_0.86)_79.24%)] w-[31.75rem] h-[22.13rem] flex flex-col items-start justify-end pt-[2rem] px-[1rem] pb-[1.5rem] box-border gap-[2rem] z-[1]">
-                <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
-                  <div className="self-stretch flex flex-col items-start justify-start">
-                    <div className="relative leading-[2.5rem] font-semibold flex items-center w-[26.13rem]">
-                      Universo en aislamiento
-                    </div>
-                  </div>
-                  <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
-                    Descubre las visiones de nuestros creadores acerca de la
-                    pandemia.
-                  </div>
-                </div>
-                <div
-                  className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-center text-[1rem] text-m3-sys-light-on-primary-container">
-                  <div
-                    className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
-                    <div className="relative tracking-[0.1px] leading-[1.25rem] font-semibold">
-                      Explora aquí
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="rounded-2xl h-[37.81rem] overflow-hidden shrink-0 flex flex-row items-end justify-start relative gap-[0.63rem]">
-              <img
-                className="self-stretch relative max-h-full w-[31.75rem] object-cover z-[0]"
-                alt=""
-                src="/astro-24@2x.png"
-              />
-              <div
-                className="my-0 absolute bottom-[0rem] left-[calc(50%_-_254px)] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(0,_0,_0,_0.86)_79.24%)] w-[31.75rem] h-[22.13rem] flex flex-col items-start justify-end pt-[2rem] px-[1rem] pb-[1.5rem] box-border gap-[2rem] z-[1]">
-                <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
-                  <div className="self-stretch flex flex-col items-start justify-start">
-                    <div className="relative leading-[2.5rem] font-semibold flex items-center w-[26.13rem]">
-                      Dicotomía en la biblio
-                    </div>
-                  </div>
-                  <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
-                    Vive este recuento de las experiencias de formación
-                    desarrolladas en BibloRed Suba.
-                  </div>
-                </div>
-                <div
-                  className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-center text-[1rem] text-m3-sys-light-on-primary-container">
-                  <div
-                    className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
-                    <div className="relative tracking-[0.1px] leading-[1.25rem] font-semibold">
-                      Explora aquí
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="rounded-2xl h-[37.81rem] overflow-hidden shrink-0 flex flex-row items-end justify-start relative gap-[0.63rem]">
-              <img
-                className="self-stretch relative max-h-full w-[31.75rem] object-cover z-[0]"
-                alt=""
-                src="/astro-25@2x.png"
-              />
-              <div
-                className="my-0 absolute bottom-[0rem] left-[calc(50%_-_254px)] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(0,_0,_0,_0.86)_79.24%)] w-[31.75rem] h-[22.75rem] flex flex-col items-start justify-end pt-[2rem] px-[1rem] pb-[1.5rem] box-border gap-[2rem] z-[1]">
-                <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
-                  <div className="self-stretch flex flex-col items-start justify-start">
-                    <div className="relative leading-[2.5rem] font-semibold flex items-center w-[26.13rem]">
-                      Desarrollo de talleres audiovisuales con AI en la CUN
-                    </div>
-                  </div>
-                  <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
-                    Sé parte de un mundo donde las historias se crean de la
-                    mano de la tecnología.
-                  </div>
-                </div>
-                <div
-                  className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-center text-[1rem] text-m3-sys-light-on-primary-container">
-                  <div
-                    className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
-                    <div className="relative tracking-[0.1px] leading-[1.25rem] font-semibold">
-                      Explora aquí
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ExperienceCard
+              title="Universo en aislamiento"
+              description="Descubre las visiones de nuestros creadores acerca de la pandemia."
+              image={ExpBookImage}
+              link="#"
+              ctaLabel="Explora aquí"
+            />
 
+            <ExperienceCard
+              title="Dicotomía transversal 2 “Cese al fuego”"
+              description="Viaja con nosotros a través de una nueva versión de la historia."
+              link="#"
+              ctaLabel="Explora aquí"
+              image={ExpBookAstroImage}
+            />
 
-            <div
-              className="rounded-2xl h-[37.81rem] overflow-hidden shrink-0 flex flex-row items-end justify-start relative gap-[0.63rem]">
-              <img
-                className="self-stretch relative max-h-full w-[31.75rem] object-cover z-[0]"
-                alt=""
-                src="/astro-26@2x.png"
-              />
-              <div
-                className="my-0 absolute bottom-[0rem] left-[calc(50%_-_254px)] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(0,_0,_0,_0.86)_79.24%)] w-[31.75rem] h-[22.13rem] flex flex-col items-start justify-end pt-[2rem] px-[1rem] pb-[1.5rem] box-border gap-[2rem] z-[1]">
-                <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
-                  <div className="self-stretch flex flex-col items-start justify-start">
-                    <div className="relative leading-[2.5rem] font-semibold flex items-center w-[26.13rem]">
-                      Dicotomía transversal 2 “Cese al fuego”
-                    </div>
-                  </div>
-                  <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
-                    Viaja con nosotros a través de una nueva versión de la
-                    historia.
-                  </div>
-                </div>
-                <div
-                  className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-center text-[1rem] text-m3-sys-light-on-primary-container">
-                  <div
-                    className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
-                    <div className="relative tracking-[0.1px] leading-[1.25rem] font-semibold">
-                      Explora aquí
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="rounded-2xl h-[37.81rem] overflow-hidden shrink-0 flex flex-row items-end justify-start relative gap-[0.63rem]">
-              <img
-                className="self-stretch relative max-h-full w-[31.75rem] object-cover z-[0]"
-                alt=""
-                src="/astro-27@2x.png"
-              />
-              <div
-                className="my-0 absolute bottom-[0rem] left-[calc(50%_-_254px)] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(0,_0,_0,_0.86)_79.24%)] w-[31.75rem] h-[22.13rem] flex flex-col items-start justify-end pt-[2rem] px-[1rem] pb-[1.5rem] box-border gap-[2rem] z-[1]">
-                <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
-                  <div className="self-stretch flex flex-col items-start justify-start">
-                    <div className="relative leading-[2.5rem] font-semibold flex items-center w-[26.13rem]">
-                      Distrito gráfico Suba
-                    </div>
-                  </div>
-                  <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
-                    Hagamos un recuento de este proyecto único que promueve la
-                    narrativa gráfica en la localidad.
-                  </div>
-                </div>
-                <div
-                  className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-center text-[1rem] text-m3-sys-light-on-primary-container">
-                  <div
-                    className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
-                    <div className="relative tracking-[0.1px] leading-[1.25rem] font-semibold">
-                      Explora aquí
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div
-              className="rounded-2xl h-[37.81rem] overflow-hidden shrink-0 flex flex-row items-end justify-start relative gap-[0.63rem]">
-              <img
-                className="self-stretch relative max-h-full w-[31.75rem] object-cover z-[0]"
-                alt=""
-                src="/astro-28@2x.png"
-              />
-              <div
-                className="my-0 absolute bottom-[0rem] left-[calc(50%_-_254px)] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(0,_0,_0,_0.86)_79.24%)] w-[31.75rem] h-[22.13rem] flex flex-col items-start justify-end pt-[2rem] px-[1rem] pb-[1.5rem] box-border gap-[2rem] z-[1]">
-                <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
-                  <div className="self-stretch flex flex-col items-start justify-start">
-                    <div className="relative leading-[2.5rem] font-semibold flex items-center w-[26.13rem]">
-                      Contenido educativo e-learning para UNICIEO
-                    </div>
-                  </div>
-                  <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
-                    Transpórtate a los alcances de nuestras soluciones
-                    virtuales de educación.
-                  </div>
-                </div>
-                <div
-                  className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-center text-[1rem] text-m3-sys-light-on-primary-container">
-                  <div
-                    className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
-                    <div className="relative tracking-[0.1px] leading-[1.25rem] font-semibold">
-                      Explora aquí
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <ExperienceCard
+              title="Dicotomía en la biblio"
+              description="Vive este recuento de las experiencias de formación desarrolladas en BibloRed Suba."
+              link="/"
+              ctaLabel="Explora aquí"
+              image={ExpDicotomiaImage}
+            />
+
+            <ExperienceCard
+              title="Distrito gráfico Suba"
+              description="Hagamos un recuento de este proyecto único que promueve la narrativa gráfica en la localidad."
+              link="/"
+              ctaLabel="Explora aquí"
+              image={ExpSubaImage}
+            />
+
+            <ExperienceCard
+              title="Desarrollo de talleres audiovisuales con AI en la CUN"
+              description="Sé parte de un mundo donde las historias se crean de la mano de la tecnología."
+              link="/"
+              ctaLabel="Explora aquí"
+              image={ExpCunImage}
+            />
+
+            <ExperienceCard
+              title="Contenido educativo e-learning para UNICIEO"
+              description="Transpórtate a los alcances de nuestras soluciones virtuales de educación."
+              link="/"
+              ctaLabel="Explora aquí"
+              image={ExpUnicieoImage}
+            />
           </div>
         </div>
       </div>
       <section className="absolute top-[526.13rem] left-0 w-screen overflow-hidden flex flex-col items-center justify-center py-[5.25rem] gap-[7.19rem] text-m3-sys-light-on-primary-fixed-variant">
-        <div
-          className="absolute top-[11.28rem] left-[37.49rem] rounded-[50%] [background:linear-gradient(213.81deg,_#020200,_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[57.69rem] h-[57.69rem] [transform:_rotate(120deg)] [transform-origin:0_0] opacity-[0.32] z-[0]" />
+        <div className="absolute top-[11.28rem] left-[37.49rem] rounded-[50%] [background:linear-gradient(213.81deg,_#020200,_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[57.69rem] h-[57.69rem] [transform:_rotate(120deg)] [transform-origin:0_0] opacity-30 z-0" />
 
         <Image
           className="w-screen absolute top-[0.38rem] left-0 object-cover"
@@ -1238,91 +1078,86 @@ export default function Welcome() {
           src={BgYellowCurvedImage}
         />
 
-        <section className="flex flex-col items-center justify-center gap-[3.5rem]">
-          <div className="relative leading-[3.25rem] font-semibold">
+        <section className="z-10 container mx-auto">
+          <div className="leading-[3.25rem] font-semibold mb-3">
             ¿Por qué somos el mejor equipo interestelar?
           </div>
-          <div
-            className="w-[65rem] flex flex-row flex-wrap items-start justify-center gap-6 text-left text-[1.75rem] text-m3-sys-dark-on-secondary">
-            <div className="flex-1 flex flex-col items-start justify-start gap-[1rem]">
-              <div
-                className="rounded-81xl [background:linear-gradient(158.92deg,_#e8c349,_rgba(232,_195,_73,_0))] overflow-hidden flex flex-row items-start justify-start p-[1.13rem]">
-                <img
-                  className="relative w-[4rem] h-[4rem] object-cover"
+          <div className="w-full grid grid-cols-4 gap-6 text-left text-[1.75rem] text-m3-sys-dark-on-secondary">
+            <div className="flex flex-col items-start justify-start gap-[1rem]">
+              <div className="rounded-81xl [background:linear-gradient(158.92deg,_#e8c349,_rgba(232,_195,_73,_0))] overflow-hidden flex flex-row p-[1.13rem] z-10">
+                <Image
+                  className="w-[4rem] h-[4rem] object-cover"
                   alt=""
-                  src="/icons8esoteric99-1@2x.png"
+                  src={IconEsotericImage}
                 />
               </div>
-              <div className="self-stretch flex flex-col items-start justify-start gap-[0.75rem]">
-                <div className="self-stretch relative leading-[120%] font-medium">
-                  Originalidad
-                </div>
-                <div
-                  className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[150%] text-m3-sys-light-on-tertiary-container">
-                  Plasmamos nuestro sello único en todos los proyectos tomando
-                  como base una estética propia que nos identifica.
-                </div>
+
+              <div className="font-medium">
+                Originalidad
               </div>
+              <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-on-tertiary-container m-0">
+                Plasmamos nuestro sello único en todos los proyectos tomando
+                como base una estética propia que nos identifica.
+              </p>
             </div>
-            <div className="flex-1 flex flex-col items-start justify-start gap-[1rem]">
-              <div
-                className="rounded-81xl [background:linear-gradient(158.92deg,_#e8c349,_rgba(232,_195,_73,_0))] overflow-hidden flex flex-row items-start justify-start p-[1.13rem]">
-                <img
-                  className="relative w-[4rem] h-[4rem] object-cover"
+
+            <div className="flex flex-col items-start justify-start gap-[1rem]">
+              <div className="rounded-81xl [background:linear-gradient(158.92deg,_#e8c349,_rgba(232,_195,_73,_0))] overflow-hidden flex flex-row items-start justify-start p-[1.13rem] z-10">
+                <Image
+                  className="w-[4rem] h-[4rem] object-cover"
                   alt=""
-                  src="/icons8star99-1@2x.png"
+                  src={IconStarImage}
                 />
               </div>
-              <div className="self-stretch h-[10rem] flex flex-col items-start justify-start gap-[0.75rem]">
-                <div className="self-stretch relative leading-[120%] font-medium">
-                  Personalización
-                </div>
-                <div
-                  className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[150%] text-m3-sys-light-on-tertiary-container">
-                  Nuestro proceso de co-creación y diseño genera resultados
-                  impactantes al lanzar proyectos juntos.
-                </div>
+
+              <div className="font-medium">
+                Personalización
               </div>
+              <p
+                className="text-base leading-[150%] text-m3-sys-light-on-tertiary-container m-0">
+                Nuestro proceso de co-creación y diseño genera resultados
+                impactantes al lanzar proyectos juntos.
+              </p>
             </div>
-            <div className="flex-1 flex flex-col items-start justify-start gap-[1rem]">
+
+            <div className="flex flex-col items-start justify-start gap-[1rem]">
               <div
-                className="rounded-81xl [background:linear-gradient(158.92deg,_#e8c349,_rgba(232,_195,_73,_0))] overflow-hidden flex flex-row items-start justify-start p-[1.13rem]">
-                <img
-                  className="relative w-[4rem] h-[4rem] object-cover"
-                  alt=""
-                  src="/icons8bulb99-1@2x.png"
+                className="rounded-81xl [background:linear-gradient(158.92deg,_#e8c349,_rgba(232,_195,_73,_0))] overflow-hidden flex flex-row items-start justify-start p-[1.13rem] z-10">
+                <Image
+                  className="w-[4rem] h-[4rem] object-cover"
+                  alt="decoration"
+                  src={IconBulbImage}
                 />
               </div>
-              <div className="self-stretch flex flex-col items-start justify-start gap-[0.75rem]">
-                <div className="self-stretch relative leading-[120%] font-medium">
-                  Innovación
-                </div>
-                <div
-                  className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[150%] text-m3-sys-light-on-tertiary-container">
-                  Contar con un equipo provisto de grandes facultades creativas
-                  es la garantía de llegar a propuestas innovadoras y
-                  disruptivas.
-                </div>
+
+              <div className="font-medium">
+                Innovación
               </div>
+              <p
+                className="text-base leading-[150%] text-m3-sys-light-on-tertiary-container m-0">
+                Contar con un equipo provisto de grandes facultades creativas
+                es la garantía de llegar a propuestas innovadoras y
+                disruptivas.
+              </p>
             </div>
-            <div className="flex-1 flex flex-col items-start justify-start gap-[1rem]">
+
+            <div className="flex flex-col items-start justify-start gap-[1rem]">
               <div
-                className="rounded-81xl [background:linear-gradient(158.92deg,_#e8c349,_rgba(232,_195,_73,_0))] overflow-hidden flex flex-row items-start justify-start p-[1.13rem]">
-                <img
-                  className="relative w-[4rem] h-[4rem] object-cover"
+                className="rounded-81xl [background:linear-gradient(158.92deg,_#e8c349,_rgba(232,_195,_73,_0))] overflow-hidden flex flex-row items-start justify-start p-[1.13rem] z-10">
+                <Image
+                  className="w-[4rem] h-[4rem] object-cover"
                   alt=""
-                  src="/icons8rocket99-1@2x.png"
+                  src={IconRocketImage}
                 />
               </div>
-              <div className="self-stretch flex flex-col items-start justify-start gap-[0.75rem]">
-                <div className="self-stretch relative leading-[120%] font-medium">
-                  Efectividad
-                </div>
-                <div className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[150%] text-m3-black">
-                  Equilibramos talento y compromiso para alcanzar resultados de
-                  alta calidad y puntualidad, siguiendo OKR y estándares KPI
-                </div>
+
+              <div className="font-medium">
+                Efectividad
               </div>
+              <p className="text-base leading-[150%] text-m3-black m-0">
+                Equilibramos talento y compromiso para alcanzar resultados de
+                alta calidad y puntualidad, siguiendo OKR y estándares KPI
+              </p>
             </div>
           </div>
         </section>
@@ -1338,7 +1173,7 @@ export default function Welcome() {
             Haz parte de nuestra bitácora de viaje
           </div>
           <div
-            className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center z-[2] text-[1rem] text-m3-sys-light-on-primary-container">
+            className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center z-[2] text-base text-m3-sys-light-on-primary-container">
             <div className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
               <div className="relative tracking-[0.1px] leading-[1.25rem] font-semibold">
                 Iniciar viaje
@@ -1359,27 +1194,28 @@ export default function Welcome() {
       </section>
       <div className="absolute top-[585.69rem] left-0 w-screen h-[110.31rem] overflow-hidden text-[2.81rem]">
         <div className="absolute top-0 left-0 w-full [background:linear-gradient(180deg,_#000,_rgba(18,_31,_37,_0))] [backdrop-filter:blur(4px)] h-[110.13rem]" />
-        <img
-          className="absolute top-[56.47rem] left-[0rem] w-[36.16rem] h-[53.84rem] opacity-[0.5]"
+        <Image
+          className="absolute top-[56.47rem] left-0 w-[36.16rem] h-[53.84rem] opacity-50"
           alt=""
-          src="/ellipse-171.svg"
+          src={BgGradient2Image}
         />
-        <div
-          className="absolute top-[65.81rem] left-[61.87rem] rounded-[50%] [background:linear-gradient(213.81deg,_#020200,_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[57.69rem] h-[57.69rem] [transform:_rotate(15deg)] [transform-origin:0_0] opacity-[0.32]" />
-        <img
-          className="absolute top-[55.88rem] left-[41.87rem] w-[48.13rem] h-[54.44rem] object-cover opacity-[0.5]"
+
+        <div className="absolute top-[65.81rem] left-[61.87rem] rounded-[50%] [background:linear-gradient(213.81deg,_#020200,_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[57.69rem] h-[57.69rem] [transform:_rotate(15deg)] [transform-origin:0_0] opacity-[0.32]" />
+
+        <Image
+          className="absolute top-[55.88rem] right-0 w-[48rem] h-[54rem] object-cover opacity-50"
           alt=""
-          src="/patron-62@2x.png"
+          src={BgSiluetaImage}
         />
 
         <section id="team" className="absolute top-[0rem] left-0 w-screen flex flex-col items-center justify-start py-[5.25rem] gap-[3.5rem]">
           <div className="container mx-auto lg:min-w-[1024px]">
             <div className="flex flex-col items-center justify-start gap-6">
-              <div className="relative leading-[120%] font-medium">
+              <div className="leading-[120%] font-medium">
                 Nuestros viajeros
               </div>
               <div
-                className="relative text-[1.38rem] leading-[1.75rem] text-m3-sys-light-tertiary-container flex items-center justify-center mb-6">
+                className="text-[1.38rem] leading-[1.75rem] text-m3-sys-light-tertiary-container flex items-center justify-center mb-6">
                 Este es el equipo que hará parte de todas tus aventuras a través
                 de los universos que vas a explorar a nuestro lado.
               </div>
@@ -1409,7 +1245,7 @@ export default function Welcome() {
                     </div>
                   </div>
                   <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
+                    className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
                     Co - CEO, Founder & Business Strategist
                   </div>
                 </div>
@@ -1435,7 +1271,7 @@ export default function Welcome() {
                     </div>
                   </div>
                   <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Co - CEO, Founder & Cultural Strategist`}</div>
+                    className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Co - CEO, Founder & Cultural Strategist`}</div>
                 </div>
               </div>
               <div className="relative rounded-2xl bg-m3-white w-full h-[23rem] overflow-hidden shrink-0">
@@ -1459,7 +1295,7 @@ export default function Welcome() {
                     </div>
                   </div>
                   <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Edition, Content & Writing Strategist`}</div>
+                    className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Edition, Content & Writing Strategist`}</div>
                 </div>
               </div>
               <div className="relative rounded-2xl bg-m3-white w-full h-[23rem] overflow-hidden shrink-0">
@@ -1483,7 +1319,7 @@ export default function Welcome() {
                     </div>
                   </div>
                   <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
+                    className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
                     RAE expert writer and proofreader.
                   </div>
                 </div>
@@ -1509,7 +1345,7 @@ export default function Welcome() {
                     </div>
                   </div>
                   <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Ilustrator & digital artist`}</div>
+                    className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Ilustrator & digital artist`}</div>
                 </div>
               </div>
               <div className="relative rounded-2xl bg-m3-white w-full h-[23rem] overflow-hidden shrink-0">
@@ -1533,7 +1369,7 @@ export default function Welcome() {
                     </div>
                   </div>
                   <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
+                    className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">
                     Audiovisual and transmedia editor, educator and scriptwriter.
                   </div>
                 </div>
@@ -1559,7 +1395,7 @@ export default function Welcome() {
                     </div>
                   </div>
                   <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Tech & Dev lead`}</div>
+                    className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Tech & Dev lead`}</div>
                 </div>
               </div>
               <div className="relative rounded-2xl bg-m3-white w-full h-[23rem] overflow-hidden shrink-0">
@@ -1583,7 +1419,7 @@ export default function Welcome() {
                     </div>
                   </div>
                   <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Product Designer & Research Strategist.`}</div>
+                    className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Product Designer & Research Strategist.`}</div>
                 </div>
               </div>
               <div className="relative rounded-2xl bg-m3-white w-full h-[23rem] overflow-hidden shrink-0">
@@ -1607,18 +1443,18 @@ export default function Welcome() {
                     </div>
                   </div>
                   <div
-                    className="self-stretch relative text-[1rem] tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Social media Strategist & Designer`}</div>
+                    className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container">{`Social media Strategist & Designer`}</div>
                 </div>
               </div>
             </div>
           </div>
 
           <div
-            className="flex flex-col items-center justify-center gap-6 text-[1rem] text-m3-sys-light-on-primary-container">
-            <img
+            className="flex flex-col items-center justify-center gap-6 text-base text-m3-sys-light-on-primary-container">
+            <Image
               className="relative w-[8.25rem] h-[8.25rem] object-cover"
-              alt=""
-              src="/2-patron-corregido3@2x.png"
+              alt="cometa"
+              src={CometaImage}
             />
             <div
               className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center">
@@ -1647,7 +1483,7 @@ export default function Welcome() {
         className="absolute bottom-0 left-0 bg-m3-sys-light-inverse-surface w-full py-[5.25rem] px-2 sm:px-0 text-left text-[0.88rem] text-m3-sys-light-tertiary-container">
         <div className="container w-full mx-auto">
           <div className="grid grid-cols-4 gap-6 auto-cols-min">
-            <div className="w-3/12 flex flex-col items-start justify-start gap-[3rem]">
+            <div className="row-span-2 w-full flex flex-col items-start justify-start gap-[3rem]">
               <div className="flex flex-col items-start justify-start gap-6">
                 <div className="h-[4.06rem] flex flex-col items-end justify-center gap-[0.63rem]">
                   <Image
@@ -1679,61 +1515,60 @@ export default function Welcome() {
               </div>
               <div className="flex flex-col items-start justify-start gap-[1rem]">
                 <div className="flex flex-row items-center justify-start gap-[0.5rem]">
-                  <img
-                    className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
-                    alt=""
-                    src="/frame4.svg"
+                  <Image
+                    className="w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
+                    alt="phone"
+                    src={IconPhoneImage}
                   />
-                  <div className="relative tracking-[0.5px] leading-[1.5rem] flex items-center w-[13.13rem] shrink-0">
+                  <a className="tracking-[0.5px] leading-[1.5rem] shrink-0 text-white no-underline" href="tel:+573163762605">
                     +57 316 3762605
-                  </div>
+                  </a>
                 </div>
+
                 <div className="flex flex-row items-start justify-start gap-[0.5rem] text-[inherit]">
-                  <img
-                    className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
+                  <Image
+                    className="w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
                     alt=""
-                    src="/frame5.svg"
+                    src={IconArrobaImage}
                   />
                   <div className="flex flex-col items-start justify-start">
-                    <div className="relative tracking-[0.5px] leading-[1.5rem] flex items-center w-[13.13rem]">
-                      <a
-                        className="text-[inherit]"
-                        href="mailto:Kipow@nigmauniverse.com"
-                        target="_blank"
-                      >
-                        ipow@nigmauniverse.com
-                      </a>
-                    </div>
-                    <a
-                      className="relative tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container flex items-center w-[13.13rem] [text-decoration:none]"
+                    <Link
+                      className="text-[inherit] tracking-[0.5px] leading-[1.5rem]"
+                      href="mailto:Kipow@nigmauniverse.com"
+                      target="_blank"
+                    >
+                      ipow@nigmauniverse.com
+                    </Link>
+                    <Link
+                      className="tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container [text-decoration:none]"
                       href="mailto:proyectonigma@gmail.com"
                       target="_blank"
                     >
                       proyectonigma@gmail.com
-                    </a>
+                    </Link>
                   </div>
                 </div>
                 <div className="flex flex-row items-start justify-start gap-[0.5rem]">
-                  <img
-                    className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
-                    alt=""
-                    src="/frame6.svg"
+                  <Image
+                    className="w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
+                    alt="location"
+                    src={IconLocationImage}
                   />
-                  <div className="flex flex-col items-start justify-start gap-[0.25rem]">
-                    <div className="relative tracking-[0.5px] leading-[1.5rem] flex items-center w-[13.13rem]">
+                  <div>
+                    <div className="tracking-[0.5px] leading-[1.5rem]">
                       Bogotá, Colombia
                     </div>
-                    <div className="relative tracking-[0.5px] leading-[1.5rem] flex items-center w-[13.13rem]">
+                    <div className="tracking-[0.5px] leading-[1.5rem]">
                       Xalapa, México
                     </div>
-                    <div className="relative tracking-[0.5px] leading-[1.5rem] flex items-center w-[13.13rem]">
+                    <div className="tracking-[0.5px] leading-[1.5rem]">
                       Buenos Aires, Argentina
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div className="w-3/12 flex flex-col items-start justify-start gap-6">
+            <div className="w-full flex flex-col items-start justify-start gap-6">
               <Image
                 className="object-cover"
                 quality={100}
@@ -1742,7 +1577,7 @@ export default function Welcome() {
               />
 
               <div
-                className="flex flex-col items-start justify-start gap-[1rem] text-[1rem] text-m3-sys-light-tertiary-container">
+                className="flex flex-col items-start justify-start gap-[1rem] text-base text-m3-sys-light-tertiary-container">
                 <div className="relative tracking-[0.5px] leading-[1.5rem] flex items-center w-[9.56rem]">
                   Home
                 </div>
@@ -1766,7 +1601,7 @@ export default function Welcome() {
                 </div>
               </div>
             </div>
-            <div className="w-3/12 flex flex-col items-start justify-start gap-6">
+            <div className="w-full flex flex-col items-start justify-start gap-6">
               <div className="flex flex-col items-start justify-start gap-[0.5rem]">
                 <Image
                   className="relative w-[2rem] h-[2rem] overflow-hidden shrink-0"
@@ -1778,7 +1613,7 @@ export default function Welcome() {
                 </div>
               </div>
               <div
-                className="flex flex-col items-start justify-start gap-[1rem] text-[1rem] text-m3-sys-light-tertiary-container">
+                className="flex flex-col items-start justify-start gap-[1rem] text-base text-m3-sys-light-tertiary-container">
                 <div className="relative tracking-[0.5px] leading-[1.5rem] flex items-center">
                   Política de privacidad
                 </div>
@@ -1790,7 +1625,7 @@ export default function Welcome() {
                 </div>
               </div>
             </div>
-            <div className="w-3/12 flex flex-col items-start justify-start gap-6">
+            <div className="w-full flex flex-col items-start justify-start gap-6">
               <div className="flex flex-col items-start justify-start gap-[0.5rem]">
                 <img
                   className="relative w-[2rem] h-[2rem] overflow-hidden shrink-0"
@@ -1802,7 +1637,7 @@ export default function Welcome() {
                 </div>
               </div>
               <div
-                className="w-[20.69rem] flex flex-col items-start justify-start gap-[1rem] text-[1rem] text-m3-sys-light-tertiary-container">
+                className="w-[20.69rem] flex flex-col items-start justify-start gap-[1rem] text-base text-m3-sys-light-tertiary-container">
                 <div className="self-stretch flex flex-row items-start justify-start gap-[1rem]">
                   <img
                     className="relative rounded w-[2rem] h-[2rem] object-cover"
@@ -1850,76 +1685,75 @@ export default function Welcome() {
                 </div>
               </div>
             </div>
-          </div>
+            <div className="col-span-3 flex flex-col items-start justify-start gap-6 mb-16 text-base">
+              <Image
+                className="object-cover"
+                alt=""
+                src={TagsImage}
+              />
 
-          <div className="flex-1 flex flex-col items-start justify-start gap-6 mb-16 text-[1rem]">
-            <Image
-              className="object-cover"
-              alt=""
-              src={TagsImage}
-            />
+              <div className="leading-[1.75rem] text-center">
+                Tags
+              </div>
 
-            <div className="leading-[1.75rem] text-center">
-              Tags
-            </div>
-
-            <div
-              className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[0.5rem] text-[1rem] text-m3-sys-light-tertiary-container">
-              <div className="flex flex-row items-center justify-center">
-                <div className="relative tracking-[0.5px] leading-[1.5rem]">
-                  #nigma
+              <div
+                className="self-stretch flex flex-row flex-wrap items-center justify-start gap-[0.5rem] text-base text-m3-sys-light-tertiary-container">
+                <div className="flex flex-row items-center justify-center">
+                  <div className="relative tracking-[0.5px] leading-[1.5rem]">
+                    #nigma
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-row items-center justify-center">
-                <div className="relative tracking-[0.5px] leading-[1.5rem]">
-                  #NigmaUniverse
+                <div className="flex flex-row items-center justify-center">
+                  <div className="relative tracking-[0.5px] leading-[1.5rem]">
+                    #NigmaUniverse
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-row items-center justify-center">
+                <div className="flex flex-row items-center justify-center">
+                  <div className="tracking-[0.5px] leading-[1.5rem]">
+                    #NigmaPlanet
+                  </div>
+                </div>
                 <div className="tracking-[0.5px] leading-[1.5rem]">
-                  #NigmaPlanet
+                  #NigmaForce
                 </div>
-              </div>
-              <div className="tracking-[0.5px] leading-[1.5rem]">
-                #NigmaForce
-              </div>
-              <div className="tracking-[0.5px] leading-[1.5rem]">
-                #NigmaConstellation
-              </div>
-              <div className="tracking-[0.5px] leading-[1.5rem]">
-                #NigmaBooks
-              </div>
-              <div className="flex flex-row items-center justify-center">
                 <div className="tracking-[0.5px] leading-[1.5rem]">
-                  #NigmaLearning
+                  #NigmaConstellation
                 </div>
-              </div>
-              <div className="tracking-[0.5px] leading-[1.5rem]">
-                #transmedia
-              </div>
-              <div className="tracking-[0.5px] leading-[1.5rem]">
-                #crossmedia
-              </div>
-              <div className="tracking-[0.5px] leading-[1.5rem]">
-                #hipermedia
-              </div>
-              <div className="tracking-[0.5px] leading-[1.5rem]">
-                #editorial
-              </div>
-              <div className="tracking-[0.5px] leading-[1.5rem]">
-                #NigmaPress
-              </div>
-              <div className="tracking-[0.5px] leading-[1.5rem]">
-                #NigmaLive
-              </div>
-              <div className="flex flex-row items-center justify-center">
                 <div className="tracking-[0.5px] leading-[1.5rem]">
-                  #NigmaEventos
+                  #NigmaBooks
                 </div>
-              </div>
-              <div className="flex flex-row items-center justify-center">
-                <div className="relative tracking-[0.5px] leading-[1.5rem]">
-                  #NigmaEnseña
+                <div className="flex flex-row items-center justify-center">
+                  <div className="tracking-[0.5px] leading-[1.5rem]">
+                    #NigmaLearning
+                  </div>
+                </div>
+                <div className="tracking-[0.5px] leading-[1.5rem]">
+                  #transmedia
+                </div>
+                <div className="tracking-[0.5px] leading-[1.5rem]">
+                  #crossmedia
+                </div>
+                <div className="tracking-[0.5px] leading-[1.5rem]">
+                  #hipermedia
+                </div>
+                <div className="tracking-[0.5px] leading-[1.5rem]">
+                  #editorial
+                </div>
+                <div className="tracking-[0.5px] leading-[1.5rem]">
+                  #NigmaPress
+                </div>
+                <div className="tracking-[0.5px] leading-[1.5rem]">
+                  #NigmaLive
+                </div>
+                <div className="flex flex-row items-center justify-center">
+                  <div className="tracking-[0.5px] leading-[1.5rem]">
+                    #NigmaEventos
+                  </div>
+                </div>
+                <div className="flex flex-row items-center justify-center">
+                  <div className="relative tracking-[0.5px] leading-[1.5rem]">
+                    #NigmaEnseña
+                  </div>
                 </div>
               </div>
             </div>
@@ -1943,36 +1777,36 @@ export default function Welcome() {
             <div className="flex items-center gap-[1rem]">
               <Link href={InstagramLink}>
                 <Image
-                  className="w-[1.5rem] h-[1.5rem] shrink-0"
-                  alt=""
+                  className="w-[1.5rem] h-[1.5rem]"
+                  alt="instagram"
                   src={InstagramImage}
                 />
               </Link>
               <Link href={TwitterLink}>
                 <Image
-                  className="w-[1.5rem] h-[1.5rem] shrink-0"
-                  alt=""
+                  className="w-[1.5rem] h-[1.5rem]"
+                  alt="twitter"
                   src={TwitterImage}
                 />
               </Link>
               <Link href={YouTubeLink}>
                 <Image
-                  className="w-[1.5rem] h-[1.5rem] shrink-0"
-                  alt=""
+                  className="w-[1.5rem] h-[1.5rem]"
+                  alt="youtube"
                   src={YouTubeImage}
                 />
               </Link>
               <Link href={TikTokLink}>
                 <Image
-                  className="w-[1.5rem] h-[1.5rem] shrink-0"
-                  alt=""
+                  className="w-[1.5rem] h-[1.5rem]"
+                  alt="tiktok"
                   src={TikTokImage}
                 />
               </Link>
               <Link href={FacebookLink}>
                 <Image
-                  className="w-[1.5rem] h-[1.5rem] shrink-0"
-                  alt=""
+                  className="w-[1.5rem] h-[1.5rem]"
+                  alt="facebook"
                   src={FacebookImage}
                 />
               </Link>
