@@ -18,6 +18,7 @@ import TermsAndCondImage from '../assets/termscond.svg'
 import TagsImage from '../assets/tags.svg'
 import Patron5Image from '../assets/patron.svg'
 import PatronStarImage from '../assets/patronStar.svg'
+import PatronStar2Image from '../assets/patronStar2.png'
 import ComputerPlanetImage from '../assets/computerplanet.png'
 import ShimmerImage from '../assets/shimmer.svg'
 import ProgressImage from '../assets/progress.svg'
@@ -32,6 +33,7 @@ import Silueta3Image from '../assets/silueta3.png'
 import BgGradientImage from '../assets/bggradient1.svg'
 import BgGradient2Image from '../assets/bg_gradient2.svg'
 import BgSiluetaImage from '../assets/bg_silueta4.png'
+import BgBigCurvedImage from '../assets/bg_big_curved.png'
 import BrandAviancaImage from '../assets/brand_avianca.svg'
 import BrandLeoImage from '../assets/brand_leo.svg'
 import BrandBancolombiaImage from '../assets/brand_bancolombia.svg'
@@ -168,22 +170,21 @@ export default function Welcome() {
       </div>
       <section
         className="absolute top-[156.25rem] left-0 w-screen overflow-hidden flex flex-col items-center justify-start py-[5.25rem] px-[0rem] box-border gap-[3.5rem] text-[2.81rem]">
-        <img
-          className="absolute my-0 top-[0rem] left-[69.25rem] w-[38.25rem] h-[38.25rem] object-cover opacity-[0.2] z-[0]"
+        <Image
+          className="absolute my-0 top-0 left-[69.25rem] w-[38.25rem] h-[38.25rem] object-cover opacity-[0.2] z-[0]"
           alt=""
-          src="/2-patronpppp@2x.png"
+          src={PatternStarsImage}
         />
         <div className="flex flex-col items-center justify-start gap-6 z-[1]">
-          <div className="relative leading-[120%] font-semibold">
+          <div className="leading-[120%] font-semibold text-13xl">
             Nuestros aliados
           </div>
-          <div
-            className="relative text-[1.38rem] leading-[1.75rem] text-m3-sys-light-tertiary-container flex items-center justify-center w-[42.88rem]">
+          <div className="text-[1.38rem] leading-[1.75rem] text-m3-sys-light-tertiary-container flex items-center justify-center w-full">
             Estos son solo algunos de los importantes aliados con los que hemos
             compartido viajes profesionales fantásticos
           </div>
         </div>
-        <div className="w-screen flex flex-col items-start justify-start gap-[2rem] opacity-[0.6] z-[2]">
+        <div className="w-screen flex flex-col items-start justify-start gap-[2rem] opacity-60 z-[2] overflow-hidden">
           <div className="self-stretch flex flex-col items-start justify-start">
             <div className="flex flex-row items-center justify-center gap-[2.5rem]">
               <Image
@@ -231,7 +232,7 @@ export default function Welcome() {
           </div>
         </div>
         <Image
-          className="absolute my-0 top-0 left-0 w-[33rem] h-[29rem] opacity-50 z-[3]"
+          className="absolute my-0 top-0 left-0 w-[33rem] h-[29rem] opacity-50 z-0"
           alt=""
           src={BgGradientImage}
         />
@@ -248,10 +249,13 @@ export default function Welcome() {
           src={PatternStarsImage}
         />
       </section>
-      <img
-        className="absolute top-[3.19rem] left-[61.44rem] w-[32.13rem] h-[32.13rem] object-cover opacity-[0.3]"
-        alt=""
-        src="/patron-7@2x.png"
+      <div
+        className="absolute top-[3.2rem] right-0 w-[32.13rem] h-[32.13rem] object-cover opacity-30"
+        style={{
+          borderRadius: 358,
+          background: 'linear-gradient(129deg, rgba(255, 230, 10, 0.34) 31.03%, rgba(2, 2, 0, 0.00) 73.69%)',
+          filter: 'blur(47px)'
+        }}
       />
       <Image
         className="absolute top-[6.13rem] left-[80.94rem] w-[8.5rem] h-[8.5rem] object-cover opacity-[0.5]"
@@ -259,7 +263,7 @@ export default function Welcome() {
         src={SunImage}
       />
       <Image
-        className="absolute top-[2.69rem] left-[0rem] w-[6.25rem] h-[8.5rem] object-cover opacity-[0.5]"
+        className="absolute top-[2.69rem] left-0 w-[6.25rem] h-[8.5rem] object-cover opacity-[0.5]"
         alt=""
         src={PatternStarsImage}
       />
@@ -310,7 +314,7 @@ export default function Welcome() {
       />
       <div className="absolute top-[12.75rem] left-[12.5rem]" />
       <div
-        className="absolute top-[0rem] left-[0rem] w-[90rem] h-[108.88rem] overflow-hidden hidden text-[0.88rem] text-m3-white font-inter">
+        className="absolute top-0 left-0 w-[90rem] h-[108.88rem] overflow-hidden hidden text-[0.88rem] text-m3-white font-inter">
         <img
           className="absolute h-[4.82%] w-full top-[100%] right-[0%] bottom-[-4.82%] left-[0%] max-w-full overflow-hidden max-h-full"
           alt=""
@@ -387,7 +391,7 @@ export default function Welcome() {
       <div
         className="absolute top-[96.47rem] left-[37.43rem] rounded-[50%] [background:linear-gradient(213.81deg,_#020200,_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[57.69rem] h-[57.69rem] [transform:_rotate(120deg)] [transform-origin:0_0] opacity-[0.32]" />
       <img
-        className="absolute top-[128.94rem] left-[0rem] w-[24.75rem] h-[24.75rem] object-cover opacity-[0.5]"
+        className="absolute top-[128.94rem] left-0 w-[24.75rem] h-[24.75rem] object-cover opacity-[0.5]"
         alt=""
         src="/2-patronpppp-1@2x.png"
       />
@@ -396,7 +400,7 @@ export default function Welcome() {
         className="absolute top-[76.41rem] left-[116.4rem] rounded-[50%] [background:linear-gradient(213.81deg,_rgba(77,_217,_230,_0.55),_rgba(77,_217,_230,_0))] [filter:blur(94px)] w-[44.95rem] h-[44.95rem] [transform:_rotate(120deg)] [transform-origin:0_0] opacity-[0.2]" />
 
       <div
-        className="absolute top-[252.38rem] left-[0rem] w-[90rem] hidden flex-col items-start justify-start py-[5.25rem] px-[12.5rem] box-border gap-[3.5rem] text-left text-[1.75rem]">
+        className="absolute top-[252.38rem] left-0 w-[90rem] hidden flex-col items-start justify-start py-[5.25rem] px-[12.5rem] box-border gap-[3.5rem] text-left text-[1.75rem]">
         <div className="relative text-[2.75rem] leading-[120%] font-semibold flex items-center w-[26.19rem]">
           Universos Nigma
         </div>
@@ -406,7 +410,7 @@ export default function Welcome() {
               className="absolute top-[1.87rem] left-[10.8rem] rounded-[50%] bg-khaki [filter:blur(61px)] w-[2.77rem] h-[2.77rem] opacity-[0.7]" />
             <div className="absolute top-[2.13rem] left-[-2.94rem] w-[29.56rem] h-[25.88rem]">
               <div
-                className="absolute top-[0rem] left-[17.13rem] leading-[2.25rem] font-medium text-m3-sys-light-primary-container flex items-center w-[12.44rem]">
+                className="absolute top-0 left-[17.13rem] leading-[2.25rem] font-medium text-m3-sys-light-primary-container flex items-center w-[12.44rem]">
                 Nigma Planet
               </div>
               <div
@@ -414,7 +418,7 @@ export default function Welcome() {
                 Nigma Constellation
               </div>
               <div
-                className="absolute top-[12rem] left-[0rem] leading-[2.25rem] font-medium text-right flex items-center w-[13.5rem]">
+                className="absolute top-[12rem] left-0 leading-[2.25rem] font-medium text-right flex items-center w-[13.5rem]">
                 Nigma Force
               </div>
               <Image
@@ -502,12 +506,13 @@ export default function Welcome() {
         </div>
       </section>
 
-      <section className="absolute top-[0rem] left-[0rem] h-[49.56rem] text-left text-[3.56rem] text-m3-white">
-        <div
-          className="absolute top-[7.88rem] left-[8.63rem] rounded-[50%] bg-darkolivegreen [backdrop-filter:blur(10px)] box-border w-[23.19rem] h-[23.19rem] opacity-[0.5] border-[1px] border-solid border-teal" />
-        <div
-          className="absolute top-[calc(50%_-_80.5px)] left-[12.5rem] flex flex-col items-start justify-start gap-[2rem]">
-          <span className="[line-break:anywhere] tracking-[-0.25px] leading-[4rem] w-[34rem]">
+      <section className="absolute top-0 left-0 h-[49.56rem] text-left text-[3.56rem] text-m3-white w-screen">
+        <div className="absolute top-[7.88rem] left-[8.63rem] rounded-[50%] bg-darkolivegreen [backdrop-filter:blur(10px)] box-border w-[23.19rem] h-[23.19rem] opacity-[0.5] border-[1px] border-solid border-teal"
+             role="presentation"
+        />
+
+        <div className="absolute top-96 left-0 text-25xl md:top-[calc(50%_-_80.5px)] md:left-[12.5rem] flex flex-col items-start justify-start gap-[2rem] px-4 sm:px-0">
+          <span className="[line-break:anywhere] tracking-[-0.25px] leading-[4rem] md:w-[34rem]">
             <span className="font-semibold">“</span>
             <span className="text-m3-sys-light-secondary-container">
               <b>Nigma: </b>
@@ -517,14 +522,11 @@ export default function Welcome() {
             </span>
           </span>
 
-          <div
-            className="rounded-81xl bg-m3-sys-light-secondary-container h-[3.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-center text-base text-m3-sys-light-on-primary-container">
-            <div className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem]">
-              <div className="leading-[1.25rem] font-semibold">
-                Acompáñanos
-              </div>
+          <Link href="/" className="no-underline rounded-81xl bg-m3-sys-light-secondary-container h-[3.5rem] overflow-hidden shrink-0 flex flex-col items-center justify-center text-center text-base text-m3-sys-light-on-primary-container">
+            <div className="self-stretch flex-1 flex flex-row items-center justify-center py-[0.63rem] px-[1.5rem] leading-[1.25rem] font-semibold">
+              Acompáñanos
             </div>
-          </div>
+          </Link>
         </div>
         <div
           className="absolute top-[42.45rem] left-[59.61rem] rounded-[50%] bg-gray-200 [filter:blur(124px)] w-[31.6rem] h-[1.85rem]" />
@@ -533,7 +535,7 @@ export default function Welcome() {
         <div
           className="absolute top-[17.98rem] left-[66.44rem] rounded-[50%] [background:linear-gradient(128.69deg,_rgba(255,_230,_10,_0.34),_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[22.42rem] h-[22.42rem] [transform:_rotate(45deg)] [transform-origin:0_0] opacity-[0.5]" />
         <Image
-          className="absolute top-32 xl:top-[4.8rem] -right-10 w-[43rem] h-[30rem] xl:w-[57rem] xl:h-[39rem] object-cover"
+          className="absolute top-12 md:top-[4.8rem] -right-10 w-[23rem] h-[20rem] md:w-[43rem] md:h-[30rem] xl:w-[57rem] xl:h-[39rem] object-contain md:object-cover"
           alt="hero image"
           src={HeroImage}
           priority
@@ -543,12 +545,113 @@ export default function Welcome() {
           className="absolute top-[36.81rem] left-[75.5rem] [background:linear-gradient(180deg,_rgba(2,_26,_28,_0),_#022022_53.52%,_#022023_99.02%)] w-[14.56rem] h-[12.25rem]" />
 
         <Image
-          className="absolute top-[10.69rem] left-[0rem] w-[16.58rem] h-[17.08rem] object-cover"
+          className="absolute top-40 -left-8 md:top-[10.6rem] md:left-0 w-44 h-44 md:w-[16rem] md:h-[17rem] object-cover"
           alt=""
           src={ManosDiamanteImage}
         />
 
-        <nav className="w-screen text-base">
+        <nav className="xl:hidden border-gray-200 px-4 pt-3 mx-auto">
+          <div className="container mx-auto flex flex-wrap items-center justify-between">
+            <Link href="/" className="flex">
+              <Image
+                className="relative w-[6.69rem] h-[1.88rem] object-cover"
+                alt="logo"
+                src={LogoNigmaImage}
+              />
+            </Link>
+            <div className="flex md:order-2">
+              <div className="relative mr-3 md:mr-0 hidden md:block">
+                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                  <svg
+                    className="w-5 h-5 text-gray-500"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                      clipRule="evenodd"
+                    />
+                  </svg>
+                </div>
+                <input
+                  type="text"
+                  id="email-adress-icon"
+                  className="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2"
+                  placeholder="Search..."
+                />
+              </div>
+              <button
+                data-collapse-toggle="mobile-menu-3"
+                type="button"
+                className="md:hidden text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
+                aria-controls="mobile-menu-3"
+                aria-expanded="false"
+              >
+                <span className="sr-only">Open main menu</span>
+                <svg
+                  className="w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                <svg
+                  className="hidden w-6 h-6"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </button>
+            </div>
+            <div
+              className="hidden md:flex justify-between items-center w-full md:w-auto md:order-1"
+              id="mobile-menu-3"
+            >
+              <ul className="flex-col md:flex-row flex md:space-x-8 mt-4 md:mt-0 md:text-sm md:font-medium">
+                <li>
+                  <a
+                    href="#"
+                    className="bg-blue-700 md:bg-transparent text-white block pl-3 pr-4 py-2 md:text-blue-700 md:p-0 rounded"
+                    aria-current="page"
+                  >
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
+                  >
+                    About
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    className="text-gray-700 hover:bg-gray-50 border-b border-gray-100 md:hover:bg-transparent md:border-0 block pl-3 pr-4 py-2 md:hover:text-blue-700 md:p-0"
+                  >
+                    Services
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <nav className="hidden xl:block w-screen text-base">
           <div className="container mx-auto flex flex-row items-center justify-center text-center mt-3">
             <Image
               className="relative w-[6.69rem] h-[1.88rem] object-cover"
@@ -671,22 +774,22 @@ export default function Welcome() {
           </div>
         </nav>
       </section>
+
       <section
         className="absolute top-[83.44rem] left-0 [background:linear-gradient(180deg,_#000,_rgba(18,_31,_37,_0))] [backdrop-filter:blur(4px)] w-screen overflow-hidden flex flex-col items-start justify-start py-[5.25rem] gap-[3.5rem] text-left text-[1.75rem]">
         <div
           className="absolute my-0 top-[53.98rem] left-[12.51rem] rounded-[50%] [background:linear-gradient(128.69deg,_rgba(255,_230,_10,_0.34),_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[22.42rem] h-[22.42rem] [transform:_rotate(135deg)] [transform-origin:0_0] opacity-[0.3] z-[0]" />
 
-        <h2 className="text-[2.75rem] leading-[120%] font-semibold container mx-auto z-[2] text-center m-0">
+        <h2 className="text-13xl md:text-[2.75rem] leading-[120%] font-semibold container mx-auto text-left md:text-center m-0 px-4">
           Universos Nigma
         </h2>
 
-        <div className="grid grid-cols-2 gap-16 container mx-auto text-m3-sys-light-primary">
-          <div className="relative w-full h-[31.25rem]">
-            <div
-              className="absolute top-[1.87rem] left-[10.8rem] rounded-[50%] bg-khaki [filter:blur(61px)] w-[2.77rem] h-[2.77rem] opacity-[0.7]" />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 container mx-auto text-m3-sys-light-primary">
+          <div className="relative w-full h-[31.25rem] hidden xl:block">
+            <div className="absolute top-[1.87rem] left-[10.8rem] rounded-[50%] bg-khaki [filter:blur(61px)] w-[2.77rem] h-[2.77rem] opacity-[0.7]" />
+
             <div className="absolute top-[2.13rem] left-[-2.94rem] w-[29.56rem] h-[25.88rem]">
-              <div
-                className="absolute top-[0rem] left-[17.13rem] leading-[2.25rem] font-medium text-m3-sys-light-primary-container flex items-center w-[12.44rem]">
+              <div className="absolute top-0 left-[17.13rem] leading-[2.25rem] font-medium text-m3-sys-light-primary-container flex items-center w-[12.44rem]">
                 Nigma Planet
               </div>
               <div
@@ -694,7 +797,7 @@ export default function Welcome() {
                 Nigma Constellation
               </div>
               <div
-                className="absolute top-[12rem] left-[0rem] leading-[2.25rem] font-medium text-right flex items-center w-[13.5rem]">
+                className="absolute top-[12rem] left-0 leading-[2.25rem] font-medium text-right flex items-center w-[13.5rem]">
                 Nigma Force
               </div>
               <Image
@@ -716,7 +819,7 @@ export default function Welcome() {
               alt=""
               src={ComputerPlanetImage}
             />
-            <div className="self-stretch flex flex-col items-start justify-start gap-[1rem]">
+            <div className="self-stretch flex flex-col items-start justify-start gap-[1rem] px-4">
               <div
                 className="self-stretch flex flex-col items-start justify-start text-[2rem] text-m3-sys-light-primary-container">
                 <div className="self-stretch relative leading-[2.5rem] font-semibold">
@@ -773,12 +876,12 @@ export default function Welcome() {
           src={PatternStarsImage}
         />
         <Image
-          className="absolute my-0 top-[0rem] left-[43.13rem] w-[17.38rem] h-[16.56rem] object-cover opacity-[0.5] z-[6]"
+          className="absolute my-0 top-0 left-[43.13rem] w-[17.38rem] h-[16.56rem] object-cover opacity-[0.5] z-[6]"
           alt=""
           src={PatternStarsImage}
         />
         <Image
-          className="absolute my-0 top-[5.13rem] left-[0rem] w-[7.06rem] h-[14.13rem] object-cover opacity-[0.5] z-[7]"
+          className="absolute my-0 top-[5.13rem] left-0 w-[7.06rem] h-[14.13rem] object-cover opacity-[0.5] z-[7]"
           alt=""
           src={PatternStarsImage}
         />
@@ -800,26 +903,22 @@ export default function Welcome() {
           src="/2-patronpppp1@2x.png"
         />
       </section>
-      <div className="absolute top-[186.13rem] left-[0rem] w-[90rem] h-[73.75rem] text-[2.81rem]">
+      <div className="absolute top-[160rem] md:top-[186rem] left-0 w-[90rem] h-[73.75rem] text-[2.81rem]">
         <Image
-          className="absolute top-32 left-[0rem] w-[30rem] h-[30rem] object-cover opacity-50"
+          className="absolute top-32 left-0 w-[30rem] h-[30rem] object-cover opacity-50"
           alt=""
           src={Silueta2Image}
         />
-        <img
-          className="absolute top-[59.25rem] left-[0rem] w-[18.25rem] h-[26.94rem] object-cover"
-          alt=""
-          src="/patron-corregopt1@2x.png"
+        <Image
+          className="absolute top-[59.25rem] left-0 w-[18.25rem] h-[26.94rem] object-cover"
+          alt="pattern star"
+          src={PatronStar2Image}
+          quality={100}
         />
         <div
           className="absolute top-[5.13rem] left-[-63.5rem] rounded-[50%] [background:linear-gradient(170.41deg,_rgba(77,_217,_230,_0.26),_rgba(77,_217,_230,_0))] [filter:blur(94px)] w-[217.13rem] h-[103.06rem] opacity-[0.7]" />
         <div
           className="absolute top-[67.2rem] left-[calc(50%_-_0px)] rounded-[50%] [background:linear-gradient(135deg,_rgba(255,_224,_131,_0),_rgba(255,_224,_131,_0.47))] [filter:blur(94px)] w-[39.51rem] h-[39.51rem] [transform:_rotate(-135deg)] [transform-origin:0_0] opacity-[0.5]" />
-        <img
-          className="absolute top-[56.19rem] left-[36.29rem] w-[53.71rem] h-[91.4rem] opacity-[0.5]"
-          alt=""
-          src="/ellipse-15.svg"
-        />
         <div
           className="absolute top-[100.06rem] left-[-8.87rem] rounded-[50%] [background:linear-gradient(128.69deg,_rgba(255,_224,_131,_0),_rgba(255,_224,_131,_0.26))] [filter:blur(94px)] w-[39.51rem] h-[39.51rem] [transform:_rotate(-120deg)] [transform-origin:0_0] opacity-[0.3]" />
         <Image
@@ -828,52 +927,34 @@ export default function Welcome() {
           src={Silueta1Image}
         />
         <div className="absolute top-[29.31rem] left-[13.48rem] rounded-[50%] bg-darkolivegreen [backdrop-filter:blur(10px)] box-border w-[9.5rem] h-[9.5rem] opacity-[0.5] border-[1px] border-solid border-teal" />
-        <section className="absolute top-[20.31rem] left-[calc(50%_-_720px)] w-screen flex flex-col items-center justify-start py-[5.25rem] box-border gap-[3.5rem]">
+        <section className="absolute top-[20.31rem] left-[calc(50%_-_720px)] w-screen flex flex-col items-center justify-start py-[5.25rem] gap-4 md:gap-[3.5rem]">
           <Image
             className="relative w-[12.5rem] h-[12.5rem] object-cover z-[0]"
             alt="sun"
             src={SunFrontImage}
           />
-          <div className="relative leading-[120%] font-medium z-[1]">
+          <div className="leading-[120%] font-medium">
             Testimonios
           </div>
-          <div
-            className="flex flex-col items-center justify-center gap-[3.5rem] z-[2] text-[2rem] text-m3-sys-light-tertiary-container font-m3-label-large">
-            <div className="w-[42.88rem] flex flex-col items-start justify-start gap-[1rem]">
-              <div className="self-stretch relative leading-[2.5rem]">
+          <div className="text-[2rem] text-m3-sys-light-tertiary-container font-m3-label-large px-4 md:px-0">
+            <div className="md:w-[42.88rem]">
+              <p className="text-base md:leading-[2.5rem]">
                 Son eficientes, profesionales y expertos en lo que hacen.
                 Pasamos de estar en 0 a tener un alto estándar de una plataforma
                 e-learning y sus objetos de virtualización de aprendizaje.
-              </div>
-              <div className="self-stretch relative text-base tracking-[0.5px] leading-[1.5rem] font-montserrat">
+              </p>
+              <p className="self-stretch text-base tracking-[0.5px] leading-[1.5rem] font-montserrat">
                 - Camilo Rojas, Coordinador Unidad de Virtualización UniCIEO
-              </div>
+              </p>
             </div>
-            <div className="flex flex-row items-start justify-start gap-[1rem]">
-              <div className="w-[3rem] h-[3rem] flex flex-col items-center justify-center p-[0.25rem] box-border">
-                <div
-                  className="rounded-81xl bg-m3-sys-light-primary overflow-hidden flex flex-row items-center justify-center">
-                  <div className="flex flex-row items-center justify-center p-[0.5rem]">
-                    <img
-                      className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
-                      alt=""
-                      src="/icon4.svg"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div className="w-[3rem] h-[3rem] flex flex-col items-center justify-center p-[0.25rem] box-border">
-                <div
-                  className="rounded-81xl bg-m3-sys-light-primary overflow-hidden flex flex-row items-center justify-center">
-                  <div className="flex flex-row items-center justify-center p-[0.5rem]">
-                    <img
-                      className="relative w-[1.5rem] h-[1.5rem] overflow-hidden shrink-0"
-                      alt=""
-                      src="/icon5.svg"
-                    />
-                  </div>
-                </div>
-              </div>
+            <div className="flex flex-row items-start justify-center md:justify-start gap-[1rem] mx-auto">
+              <button type="button" className="rounded-81xl bg-m3-sys-light-primary overflow-hidden flex flex-row items-center justify-center w-10 h-10 text-base text-white">
+                {'<'}
+              </button>
+
+              <button type="button" className="rounded-81xl bg-m3-sys-light-primary overflow-hidden flex flex-row items-center justify-center w-10 h-10 text-base text-white">
+                {'>'}
+              </button>
             </div>
           </div>
           <div
@@ -882,100 +963,86 @@ export default function Welcome() {
             className="absolute my-0 top-[21.88rem] left-[75.31rem] rounded-[50%] bg-darkolivegreen [backdrop-filter:blur(10px)] box-border w-[2.75rem] h-[2.75rem] opacity-[0.5] z-[4] border-[1px] border-solid border-teal" />
         </section>
       </div>
-      <div className="absolute top-[267rem] left-[calc(50%_-_720px)] w-[90rem] h-[67.94rem] text-left">
-        <img
-          className="absolute top-[-23.87rem] left-[66.31rem] w-[23.69rem] h-[48.15rem] object-cover opacity-[0.3]"
-          alt=""
-          src="/patron-6@2x.png"
-        />
-        <img
-          className="absolute top-[11.66rem] left-[0rem] w-[43.5rem] h-[91.38rem] opacity-[0.5]"
-          alt=""
-          src="/ellipse-8.svg"
-        />
-        <img
+      <div className="absolute top-[267rem] left-0 w-screen h-[67.94rem] text-left">
+        <Image
           className="relative w-[90rem] h-[68rem] opacity-[0.4]"
           alt=""
-          src="/subtract.svg"
-        />
-        <img
-          className="absolute top-[17.63rem] left-[5.56rem] w-[42.5rem] h-[42.5rem] opacity-[0.7]"
-          alt=""
-          src="/group-26086169.svg"
+          src={BgBigCurvedImage}
         />
         <Image
           className="absolute top-0 left-0 rounded-b-none w-screen h-[68rem] object-cover mix-blend-overlay"
           alt=""
           src={BgNavegaImage}
         />
-        <div
-          className="absolute top-[0rem] left-[calc(50%_-_584px)] rounded-t-37xl rounded-b-none flex flex-row items-start justify-start py-[5.25rem] px-[4rem] gap-[7.06rem]">
-          <div className="h-[53rem] flex flex-col items-center justify-start relative gap-[3.5rem]">
-            <div className="relative leading-[120%] font-semibold flex items-center w-[29.25rem] z-[0]">
-              Navega con nosotros por esta galaxia de proyectos
-            </div>
-            <Image
-              className="absolute my-0 top-[14.38rem] left-[-4.69rem] w-[38.13rem] h-[38.13rem] object-cover z-[1]"
-              alt=""
-              src={ObjThinStarsImage}
-            />
-            <Image
-              className="absolute my-0 top-[13.44rem] left-[1.31rem] w-[26.19rem] h-[26.19rem] object-cover z-[2]"
-              alt=""
-              src={ObjMaskImage}
-            />
-          </div>
-          <div
-            className="w-[28.69rem] flex flex-col items-start justify-start gap-[2rem] text-[3.56rem] text-m3-sys-light-primary-container">
-            <div className="">
-              <Image src={OneImage} alt="1" className="mb-1" />
-
-              <div className="text-[1.75rem] leading-[120%] font-medium">
-                El mejor equipo
+        <div className="absolute top-0 left-0 w-full px-4 md:px-0">
+          <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-start justify-start gap-8">
+            <div className="flex flex-col items-center justify-start relative gap-[3.5rem]">
+              <div className="relative leading-[120%] font-semibold flex items-center w-[29rem]">
+                Navega con nosotros por esta galaxia de proyectos
               </div>
-
-              <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
-                Tenemos un grupo que está a la altura para llevar al máximo el
-                alcance de cualquier proyecto.
-              </p>
+              <Image
+                className="absolute my-0 top-[14.38rem] left-[-4.69rem] w-[38rem] h-[38rem] object-cover z-[1] hidden md:block"
+                alt=""
+                src={ObjThinStarsImage}
+              />
+              <Image
+                className="absolute my-0 top-[14rem] left-[1rem] w-[26rem] h-[26rem] object-cover z-[2] hidden md:block"
+                alt=""
+                src={ObjMaskImage}
+              />
             </div>
 
-            <div>
-              <Image src={TwoImage} alt="2" className="mb-1" />
+            <div className="flex flex-col items-start justify-start gap-4 text-[3.56rem] text-m3-sys-light-primary-container">
+              <div>
+                <Image src={OneImage} alt="1" className="mb-1" />
 
-              <div className="text-[1.75rem] leading-[120%] font-medium">
-                Conexiones estratégicas
+                <div className="text-[1.75rem] leading-[120%] font-medium">
+                  El mejor equipo
+                </div>
+
+                <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
+                  Tenemos un grupo que está a la altura para llevar al máximo el
+                  alcance de cualquier proyecto.
+                </p>
               </div>
 
-              <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
-                Contamos con una red de difusión alimentada por aliados fuertes
-                que nos dan la infraestructura ideal para llevar nuestras ideas
-                a más lugares de forma sorprendente
-              </p>
-            </div>
+              <div>
+                <Image src={TwoImage} alt="2" className="mb-1" />
 
-            <div>
-              <Image src={ThreeImage} alt="3" className="mb-1" />
-              <div className="text-[1.75rem] leading-[120%] font-medium">
-                Experiencia sideral
-              </div>
-              <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
-                Tenemos la fusión profesional de más alto nivel, gracias a
-                nuestro trabajo con grandes clientes, marcas e instituciones
-              </p>
-            </div>
+                <div className="text-[1.75rem] leading-[120%] font-medium">
+                  Conexiones estratégicas
+                </div>
 
-            <div>
-              <Image src={FourImage} alt="4" className="mb-1" />
-              <div className="text-[1.75rem] leading-[120%] font-medium">
-                Estrategias de vanguardia
+                <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
+                  Contamos con una red de difusión alimentada por aliados fuertes
+                  que nos dan la infraestructura ideal para llevar nuestras ideas
+                  a más lugares de forma sorprendente
+                </p>
               </div>
-              <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
-                Estamos preparados para articular cada proyecto adaptándonos a
-                sus necesidades gracias a la aplicación profesional de
-                metodologías ágiles y de diseño centrados en el beneficio de la
-                humanidad
-              </p>
+
+              <div>
+                <Image src={ThreeImage} alt="3" className="mb-1" />
+                <div className="text-[1.75rem] leading-[120%] font-medium">
+                  Experiencia sideral
+                </div>
+                <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
+                  Tenemos la fusión profesional de más alto nivel, gracias a
+                  nuestro trabajo con grandes clientes, marcas e instituciones
+                </p>
+              </div>
+
+              <div>
+                <Image src={FourImage} alt="4" className="mb-1" />
+                <div className="text-[1.75rem] leading-[120%] font-medium">
+                  Estrategias de vanguardia
+                </div>
+                <p className="text-base tracking-[0.5px] leading-[150%] text-m3-sys-light-tertiary-container">
+                  Estamos preparados para articular cada proyecto adaptándonos a
+                  sus necesidades gracias a la aplicación profesional de
+                  metodologías ágiles y de diseño centrados en el beneficio de la
+                  humanidad
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -988,14 +1055,14 @@ export default function Welcome() {
           src={SubtractImage}
         />
         <img
-          className="absolute top-[0rem] left-[0rem] w-[38.6rem] h-[84.54rem] opacity-[0.5]"
+          className="absolute top-0 left-0 w-[38.6rem] h-[84.54rem] opacity-[0.5]"
           alt=""
           src="/ellipse-12.svg"
         />
         <div
-          className="absolute top-[0rem] left-0 h-[143.25rem] overflow-hidden w-screen mx-auto flex flex-col items-center justify-start py-[5.25rem] gap-[3.5rem]">
+          className="absolute top-0 left-0 h-[143.25rem] overflow-hidden w-screen mx-auto flex flex-col items-center justify-start py-[5.25rem] gap-[3.5rem]">
           <img
-            className="absolute my-0 top-[19.5rem] left-[0rem] w-[24.56rem] h-[24.56rem] object-cover opacity-[0.5] z-[0]"
+            className="absolute my-0 top-[19.5rem] left-0 w-[24.56rem] h-[24.56rem] object-cover opacity-[0.5] z-[0]"
             alt=""
             src="/patron-42@2x.png"
           />
@@ -1010,7 +1077,7 @@ export default function Welcome() {
             src="/patron-81@2x.png"
           />
           <img
-            className="absolute my-0 top-[78.19rem] left-[0rem] w-[73rem] h-[73rem] object-cover opacity-[0.5] z-[3]"
+            className="absolute my-0 top-[78.19rem] left-0 w-[73rem] h-[73rem] object-cover opacity-[0.5] z-[3]"
             alt=""
             src="/patron-82@2x.png"
           />
@@ -1208,7 +1275,7 @@ export default function Welcome() {
           src={BgSiluetaImage}
         />
 
-        <section id="team" className="absolute top-[0rem] left-0 w-screen flex flex-col items-center justify-start py-[5.25rem] gap-[3.5rem]">
+        <section id="team" className="absolute top-0 left-0 w-screen flex flex-col items-center justify-start py-[5.25rem] gap-[3.5rem]">
           <div className="container mx-auto lg:min-w-[1024px]">
             <div className="flex flex-col items-center justify-start gap-6">
               <div className="leading-[120%] font-medium">
@@ -1224,15 +1291,15 @@ export default function Welcome() {
             <div className="w-full grid grid-cols-1 sm:grid-cols-3 gap-6 text-left text-[2rem] text-m3-white">
               <div className="relative rounded-2xl bg-m3-white w-full h-[23rem] overflow-hidden shrink-0">
                 <img
-                  className="absolute top-[0rem] left-0 w-[20.69rem] h-[23rem] object-cover"
+                  className="absolute top-0 left-0 w-[20.69rem] h-[23rem] object-cover"
                   alt=""
                   src="/image-1172@2x.png"
                 />
                 <div
-                  className="absolute top-[0rem] left-[0rem] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
+                  className="absolute top-0 left-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
 
                 <img
-                  className="absolute top-[0rem] left-[0rem] w-[7.5rem] h-[7.5rem] object-cover"
+                  className="absolute top-0 left-0 w-[7.5rem] h-[7.5rem] object-cover"
                   alt=""
                   src="/2-patron-pp24@2x.png"
                 />
@@ -1257,9 +1324,9 @@ export default function Welcome() {
                   src="/image-1173@2x.png"
                 />
                 <div
-                  className="absolute top-[0rem] left-[0rem] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
+                  className="absolute top-0 left-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
                 <img
-                  className="absolute top-[0rem] left-[0rem] w-[7.5rem] h-[7.5rem] object-cover"
+                  className="absolute top-0 left-0 w-[7.5rem] h-[7.5rem] object-cover"
                   alt=""
                   src="/2-patron-pp25@2x.png"
                 />
@@ -1281,9 +1348,9 @@ export default function Welcome() {
                   src="/image-11731@2x.png"
                 />
                 <div
-                  className="absolute top-[0rem] left-[0rem] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
+                  className="absolute top-0 left-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
                 <img
-                  className="absolute top-[0rem] left-[0rem] w-[7.5rem] h-[7.5rem] object-cover"
+                  className="absolute top-0 left-0 w-[7.5rem] h-[7.5rem] object-cover"
                   alt=""
                   src="/2-patron-pp26@2x.png"
                 />
@@ -1305,9 +1372,9 @@ export default function Welcome() {
                   src="/image-11732@2x.png"
                 />
                 <div
-                  className="absolute top-[0rem] left-[0rem] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
+                  className="absolute top-0 left-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
                 <img
-                  className="absolute top-[0rem] left-[0rem] w-[7.5rem] h-[7.5rem] object-cover"
+                  className="absolute top-0 left-0 w-[7.5rem] h-[7.5rem] object-cover"
                   alt=""
                   src="/2-patron-pp27@2x.png"
                 />
@@ -1326,14 +1393,14 @@ export default function Welcome() {
               </div>
               <div className="relative rounded-2xl bg-m3-white w-full h-[23rem] overflow-hidden shrink-0">
                 <img
-                  className="absolute top-[0rem] left-0 w-[20.69rem] h-[23rem] object-cover"
+                  className="absolute top-0 left-0 w-[20.69rem] h-[23rem] object-cover"
                   alt=""
                   src="/image-11721@2x.png"
                 />
                 <div
-                  className="absolute top-[0rem] left-[0rem] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
+                  className="absolute top-0 left-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
                 <img
-                  className="absolute top-[0rem] left-[0rem] w-[7.5rem] h-[7.5rem] object-cover"
+                  className="absolute top-0 left-0 w-[7.5rem] h-[7.5rem] object-cover"
                   alt=""
                   src="/2-patron-pp28@2x.png"
                 />
@@ -1355,9 +1422,9 @@ export default function Welcome() {
                   src="/image-11733@2x.png"
                 />
                 <div
-                  className="absolute top-[0rem] left-[0rem] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
+                  className="absolute top-0 left-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
                 <img
-                  className="absolute top-[0rem] left-[0rem] w-[7.5rem] h-[7.5rem] object-cover"
+                  className="absolute top-0 left-0 w-[7.5rem] h-[7.5rem] object-cover"
                   alt=""
                   src="/2-patron-pp29@2x.png"
                 />
@@ -1381,9 +1448,9 @@ export default function Welcome() {
                   src="/image-11734@2x.png"
                 />
                 <div
-                  className="absolute top-[0rem] left-[0rem] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
+                  className="absolute top-0 left-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
                 <img
-                  className="absolute top-[0rem] left-[0rem] w-[7.5rem] h-[7.5rem] object-cover"
+                  className="absolute top-0 left-0 w-[7.5rem] h-[7.5rem] object-cover"
                   alt=""
                   src="/2-patron-pp30@2x.png"
                 />
@@ -1400,14 +1467,14 @@ export default function Welcome() {
               </div>
               <div className="relative rounded-2xl bg-m3-white w-full h-[23rem] overflow-hidden shrink-0">
                 <img
-                  className="absolute top-[0rem] left-0 w-[20.69rem] h-[23rem] object-cover"
+                  className="absolute top-0 left-0 w-[20.69rem] h-[23rem] object-cover"
                   alt=""
                   src="/image-11722@2x.png"
                 />
                 <div
-                  className="absolute top-[0rem] left-[0rem] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
+                  className="absolute top-0 left-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
                 <img
-                  className="absolute top-[0rem] left-[0rem] w-[7.5rem] h-[7.5rem] object-cover"
+                  className="absolute top-0 left-0 w-[7.5rem] h-[7.5rem] object-cover"
                   alt=""
                   src="/2-patron-pp31@2x.png"
                 />
@@ -1424,14 +1491,14 @@ export default function Welcome() {
               </div>
               <div className="relative rounded-2xl bg-m3-white w-full h-[23rem] overflow-hidden shrink-0">
                 <img
-                  className="absolute top-[0rem] left-[calc(50%_-_165.5px)] w-[20.69rem] h-[23rem] object-cover"
+                  className="absolute top-0 left-[calc(50%_-_165.5px)] w-[20.69rem] h-[23rem] object-cover"
                   alt=""
                   src="/image-11723@2x.png"
                 />
                 <div
-                  className="absolute top-[0rem] left-[0rem] [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
+                  className="absolute top-0 left-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_#000)] w-[20.69rem] h-[23rem]" />
                 <img
-                  className="absolute top-[0rem] left-[0rem] w-[7.5rem] h-[7.5rem] object-cover"
+                  className="absolute top-0 left-0 w-[7.5rem] h-[7.5rem] object-cover"
                   alt=""
                   src="/2-patron-pp32@2x.png"
                 />
@@ -1494,7 +1561,7 @@ export default function Welcome() {
                   />
                   <div className="relative w-[4.81rem] h-[2.5rem] hidden">
                     <Image
-                      className="absolute top-[0rem] left-[0rem] w-[4.81rem] h-[2.5rem] object-cover hidden"
+                      className="absolute top-0 left-0 w-[4.81rem] h-[2.5rem] object-cover hidden"
                       alt=""
                       src={LogoNigmaImage}
                     />
