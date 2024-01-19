@@ -3,6 +3,8 @@ import '~/styles/global.css'
 import type { AppProps } from 'next/app'
 import { lazy } from 'react'
 import Head from 'next/head'
+import {NextUIProvider} from '@nextui-org/react'
+
 
 export interface SharedPageProps {
   draftMode: boolean
@@ -17,10 +19,10 @@ export default function App({
 }: AppProps<SharedPageProps>) {
   const { draftMode, token } = pageProps
   return (
-    <>
+    <NextUIProvider>
       <Head>
-        {/*<meta name="viewport" content="width=device-width, initial-scale=1" />*/}
-        <meta name="viewport" content="width=1024" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        {/* <meta name="viewport" content="width=1024" /> */}
       </Head>
 
       <style jsx global>
@@ -33,6 +35,6 @@ export default function App({
       ) : (
         <Component {...pageProps} />
       )}
-    </>
+    </NextUIProvider>
   )
 }

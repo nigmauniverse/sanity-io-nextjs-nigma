@@ -83,6 +83,10 @@ const TikTokLink = 'https://www.tiktok.com/@nigmaemerge?lang=es'
 
 export default function Welcome() {
   return (
+    <>
+    <header>
+      
+    </header>
     <main className="relative [background:linear-gradient(180deg,_#000b0c_4.28%,_#002023_5.69%,_#002023)] w-full h-[746.5rem] overflow-hidden text-center text-[2.75rem] text-m3-sys-light-secondary-container font-montserrat">
       <div className="absolute top-[478.19rem] left-0 w-screen h-[53.81rem]" style={{
         backgroundImage: `url(${BgRelojArena.src})`,
@@ -511,8 +515,8 @@ export default function Welcome() {
              role="presentation"
         />
 
-        <div className="absolute top-96 left-0 text-25xl md:top-[calc(50%_-_80.5px)] md:left-[12.5rem] flex flex-col items-start justify-start gap-[2rem] px-4 sm:px-0">
-          <span className="[line-break:anywhere] tracking-[-0.25px] leading-[4rem] md:w-[34rem]">
+        <div className="absolute z-10 top-96 left-0 text-25xl md:top-[calc(50%_-_80.5px)] md:left-[12.5rem] flex flex-col items-start justify-start gap-[2rem] px-4 sm:px-0">
+          <span className="[line-break:anywhere] tracking-[-0.25px] leading-[4rem] md:w-[37rem]">
             <span className="font-semibold">“</span>
             <span className="text-m3-sys-light-secondary-container">
               <b>Nigma: </b>
@@ -535,7 +539,7 @@ export default function Welcome() {
         <div
           className="absolute top-[17.98rem] left-[66.44rem] rounded-[50%] [background:linear-gradient(128.69deg,_rgba(255,_230,_10,_0.34),_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[22.42rem] h-[22.42rem] [transform:_rotate(45deg)] [transform-origin:0_0] opacity-[0.5]" />
         <Image
-          className="absolute top-12 md:top-[4.8rem] -right-10 w-[23rem] h-[20rem] md:w-[43rem] md:h-[30rem] xl:w-[57rem] xl:h-[39rem] object-contain md:object-cover"
+          className="absolute top-12 md:top-[4.8rem] -right-10 w-[23rem] h-[20rem] md:w-full md:h-[30rem] xl:w-[57rem] xl:h-[39rem] object-contain md:object-cover"
           alt="hero image"
           src={HeroImage}
           priority
@@ -1543,11 +1547,11 @@ export default function Welcome() {
             src="/icon6.svg"
           />
         </div>
-      </div>
-
-      {/* Footer */}
-      <footer
-        className="absolute bottom-0 left-0 bg-m3-sys-light-inverse-surface w-full py-[5.25rem] px-2 sm:px-0 text-left text-[0.88rem] text-m3-sys-light-tertiary-container">
+      </div>     
+    </main>
+    {/* Footer */}
+    <footer
+        className="bottom-0 left-0 bg-m3-sys-light-inverse-surface w-full py-[5.25rem] px-2 sm:px-0 text-left text-[0.88rem] text-m3-sys-light-tertiary-container">
         <div className="container w-full mx-auto">
           <div className="grid grid-cols-4 gap-6 auto-cols-min">
             <div className="row-span-2 w-full flex flex-col items-start justify-start gap-[3rem]">
@@ -1881,6 +1885,7 @@ export default function Welcome() {
           </div>
         </div>
       </footer>
-    </main>
+    </>
+    
   )
 }

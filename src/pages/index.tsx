@@ -1,10 +1,10 @@
 import Container from '~/components/Container'
-import Welcome from '~/components/Welcome'
+import Welcome2 from '~/components/Welcome2'
 
 export default function IndexPage() {
   return (
     <Container>
-      <Welcome />
+      <Welcome2 />
     </Container>
   )
 }
