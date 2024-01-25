@@ -1,38 +1,36 @@
+import React from 'react'
 import Image from 'next/image'
+import { Card, CardHeader, Button } from '@nextui-org/react'
 
 type TExperienceCardProps = {
-  title: string
-  description: string
-  link: string
-  ctaLabel: string
-  image: any;
+    title: string
+    description: string
+    image: any
+    showButton?: boolean
+    heightLg: string
+    widthLg: string
 }
 
-const ExperienceCard: React.FC<TExperienceCardProps> = ({ title, description, link, ctaLabel, image }) => {
-  return (
-    <div className="rounded-2xl h-[37rem] overflow-hidden shrink-0 flex flex-row items-end justify-start relative">
-      <Image
-        className="self-stretch relative max-h-full w-[31.75rem] object-cover z-[0]"
-        alt=""
-        src={image}
-      />
-      <div className="my-0 absolute bottom-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(0,_0,_0,_0.86)_79.24%)] w-[31.75rem] h-[22.13rem] flex flex-col items-start justify-end pt-[2rem] px-[1rem] pb-[1.5rem] box-border gap-[2rem] z-[1]">
-        <div className="leading-[2.5rem] font-semibold">
-          {title}
-        </div>
+const ExperienceCard: React.FC<TExperienceCardProps> = ({ title, description, image, showButton, heightLg, widthLg }) => {
 
-        <p className="text-base tracking-[0.5px] leading-[1.5rem] text-m3-sys-light-tertiary-container m-0">
-          {description}
-        </p>
-
-        <a href={link} className="no-underline rounded-81xl bg-m3-sys-light-secondary-container text-center text-base text-m3-sys-light-on-primary-container">
-          <div className="py-2 px-4 tracking-[0.1px] leading-[1.25rem] font-semibold">
-            {ctaLabel}
-          </div>
-        </a>
-      </div>
-    </div>
-  )
+    return (
+        <Card className={`h-[25rem] justify-end w-[20rem] lg:h-[${heightLg}] lg:w-[${widthLg}] snap-center border-0`} >
+            <CardHeader className="absolute items-start font-montserrat text-white flex-col z-10 px-4">
+                <h1 className="text-9xl m-0">{title}</h1>
+                <h4 className="font-medium text-base">{description}</h4>
+                {showButton && (
+                    <Button className='bg-m3-sys-light-secondary-container cursor-pointer px-6 py-4 border-none font-semibold' radius='full'>Explora aquí</Button>
+                )}
+            </CardHeader>
+            <Image
+                alt="Card background"
+                className="z-0 max-h-full w-full p-0 h-full object-cover"
+                src={image}
+            />
+            <div className="my-0 absolute bottom-0 [background:linear-gradient(180deg,_rgba(0,_0,_0,_0),_rgba(0,_0,_0,_0.86)_79.24%)] w-[31.75rem] h-[22.13rem] flex flex-col items-start justify-end pt-[2rem] px-[1rem] pb-[1.5rem] box-border gap-[2rem] z-[1]"></div>
+        </Card>
+    )
 }
+
 
 export default ExperienceCard

@@ -7,7 +7,7 @@ import FacebookImage from '../assets/icons8-facebook (1) 1.svg'
 import InstagramImage from '../assets/icons8-instagram 1.svg'
 import TikTokImage from '../assets/icons8-tiktok 1.svg'
 import ManosDiamanteImage from '../assets/ManosDiamante.png'
-import SunImage from '../assets/sun.png'
+import SunImage from '../assets/sun2.webp'
 import HeroImage from '../assets/hero2.png'
 import Star from '../assets/star.png'
 
@@ -212,6 +212,7 @@ function Header() {
           <Image
             className="absolute top-[10rem] -left-7 md:top-[-8rem] md:left-[-14.5rem] w-[10rem] h-[10rem] md:w-[25rem] md:h-[25rem] lg:w-[30rem] lg:h-[30rem] xl:w-[38rem] xl:h-[38rem] object-cover"
             alt="Sol"
+            loading='lazy'
             src={SunImage}
           />
           <Image

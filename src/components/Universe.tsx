@@ -4,7 +4,7 @@ import ProgressImage from '../assets/progress.svg'
 import ComputerPlanet from '../assets/computerplanet.png'
 import ShimmerImage from '../assets/shimmer.svg'
 import Universo from '../assets/Universo.png'
-import Cometa from '../assets/cometa.svg'
+import Cometa from '../assets/cometa1.png'
 
 import { Button } from "@nextui-org/react";
 import { Tabs, Tab } from "@nextui-org/react";
@@ -113,7 +113,7 @@ function Universe() {
                         alt='Cometa'
                         src={Cometa}/>
                         <h2 className='text-white font-normal'>Conoce todos los mundos que podemos alcanzar</h2>
-                        <Button className='bg-m3-sys-light-secondary-container px-6 py-4 border-none font-bold' radius='full'>Explora aquí</Button>
+                        <Button className='bg-m3-sys-light-secondary-container cursor-pointer px-6 py-4 border-none font-bold' radius='full'>Explora aquí</Button>
                     </div>
 
                 </section>

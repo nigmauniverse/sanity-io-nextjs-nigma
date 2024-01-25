@@ -22,7 +22,9 @@ export default function App({
     <NextUIProvider>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <meta name="viewport" content="width=1024" /> */}
+        <meta name="description" content="Nigma LandingPage" />
+        <title>nigmauniverse.com</title>
+        <html lang="es" />
       </Head>
 
       <style jsx global>
