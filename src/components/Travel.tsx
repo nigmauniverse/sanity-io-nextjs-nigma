@@ -1,6 +1,7 @@
 import { Button } from '@nextui-org/react'
 import Image from 'next/image'
 import React from 'react'
+
 import Cometa from '../assets/cometa1.png'
 
 function Travel() {

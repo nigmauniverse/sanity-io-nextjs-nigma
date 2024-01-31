@@ -1,9 +1,10 @@
 import Image from 'next/image'
 import React from 'react'
-import IconEsotericImage from '../assets/icons-esoteric.png'
-import IconStarImage from '../assets/icons-star.png'
+
 import IconBulbImage from '../assets/icons-bulb.png'
+import IconEsotericImage from '../assets/icons-esoteric.png'
 import IconRocketImage from '../assets/icons-rocket.png'
+import IconStarImage from '../assets/icons-star.png'
 function Skills() {
     return (
         <section className='-mt-20 lg:-mt-36 skills'>

@@ -1,23 +1,21 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
+import Astro from '../assets/astro.png'
+import CopyRightImage from '../assets/copyright.png'
+import IconArrobaImage from '../assets/icon_arroba.svg'
+import IconLocationImage from '../assets/icon_location.svg'
+import IconPhoneImage from '../assets/icon_phone.svg'
 import TwitterImage from '../assets/icons-twitter.svg'
 import YouTubeImage from '../assets/icons-youtube.svg'
 import FacebookImage from '../assets/icons8-facebook (1) 1.svg'
 import InstagramImage from '../assets/icons8-instagram 1.svg'
 import TikTokImage from '../assets/icons8-tiktok 1.svg'
 import LogoNigmaImage from '../assets/logonigma.svg'
-
-import CopyRightImage from '../assets/copyright.png'
 import MenuImage from '../assets/Menu.png'
-import TermsAndCondImage from '../assets/termscond.svg'
-import TagsImage from '../assets/tags.svg'
-import Astro from '../assets/astro.png'
-
-import IconPhoneImage from '../assets/icon_phone.svg'
-import IconArrobaImage from '../assets/icon_arroba.svg'
-import IconLocationImage from '../assets/icon_location.svg'
 import News from '../assets/news.svg'
+import TagsImage from '../assets/tags.svg'
+import TermsAndCondImage from '../assets/termscond.svg'
 
 
 const InstagramLink = 'https://www.instagram.com/nigma.emerge'

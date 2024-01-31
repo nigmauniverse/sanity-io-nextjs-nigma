@@ -1,16 +1,17 @@
 import React from 'react'
-import Header from './Header'
-import Slider from './Slider'
-import Universe from './Universe'
+
 import Allied from './Allied'
-import Testimonials from './Testimonials'
-import Galaxy from './Galaxy'
 import Experiences from './Experiences'
-import StarDust from './StarDust'
+import Footer from './Footer'
+import Galaxy from './Galaxy'
+import Header from './Header'
 import Skills from './Skills'
+import Slider from './Slider'
+import StarDust from './StarDust'
+import Testimonials from './Testimonials'
 import Travel from './Travel'
 import Travellers from './Travellers'
-import Footer from './Footer'
+import Universe from './Universe'
 
 function Welcome() {
     return (

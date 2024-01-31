@@ -1,15 +1,17 @@
-import Image from 'next/image'
-import { A11y, Autoplay, Pagination } from 'swiper/modules'
-import { Swiper, SwiperSlide } from 'swiper/react'
-import Banner1 from '../assets/banner1.png'
-import Banner2 from '../assets/banner2.png'
-import Banner3 from '../assets/banner3.png'
-import Silueta from '../assets/silueta4.png'
-import Estrella from '../assets/estrella_banner.png'
 import 'swiper/css'
 // import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
 import 'swiper/css/pagination'
+
+import Image from 'next/image'
+import { A11y, Autoplay, Pagination } from 'swiper/modules'
+import { Swiper, SwiperSlide } from 'swiper/react'
+
+import Banner1 from '../assets/banner1.png'
+import Banner2 from '../assets/banner2.png'
+import Banner3 from '../assets/banner3.png'
+import Estrella from '../assets/estrella_banner.png'
+import Silueta from '../assets/silueta4.png'
 
 function Slider() {
   const slides = [

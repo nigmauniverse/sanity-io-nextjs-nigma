@@ -1,19 +1,18 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Card } from '@nextui-org/react'
-import Capa from '../assets/obj_capa.png';
-import Luna from '../assets/moon.png';
-import Reloj from '../assets/obje 3.png';
-import Aguila from '../assets/obje 4.png';
-
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-
+import { Card } from '@nextui-org/react'
+import Image from 'next/image';
 // import required modules
 import { Pagination } from 'swiper/modules';
-import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+import Luna from '../assets/moon.png';
+import Capa from '../assets/obj_capa.png';
+import Reloj from '../assets/obje 3.png';
+import Aguila from '../assets/obje 4.png';
 
 function StarDust() {
     return (

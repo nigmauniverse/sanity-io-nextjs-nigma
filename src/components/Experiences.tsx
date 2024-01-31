@@ -1,12 +1,12 @@
 import React from 'react'
-import ExperienceCard from './ExperienceCard'
 
-import ExpBookImage from '../assets/exp_book.png'
 import ExpBookAstroImage from '../assets/book_astro.png'
+import ExpBookImage from '../assets/exp_book.png'
+import ExpCunImage from '../assets/exp_cun.png'
 import ExpDicotomiaImage from '../assets/exp_dicotomia.png'
 import ExpSubaImage from '../assets/exp_suba.png'
-import ExpCunImage from '../assets/exp_cun.png'
 import ExpUnicieoImage from '../assets/exp_uniceo.png'
+import ExperienceCard from './ExperienceCard'
 
 
 function Experiences() {

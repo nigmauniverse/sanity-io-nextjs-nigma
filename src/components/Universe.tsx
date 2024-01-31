@@ -1,13 +1,13 @@
-import Star from '../assets/star.png'
-import Image from 'next/image'
-import ProgressImage from '../assets/progress.svg'
-import ComputerPlanet from '../assets/computerplanet.png'
-import ShimmerImage from '../assets/shimmer.svg'
-import Universo from '../assets/Universo.png'
-import Cometa from '../assets/cometa1.png'
-
 import { Button } from "@nextui-org/react";
-import { Tabs, Tab } from "@nextui-org/react";
+import { Tab,Tabs } from "@nextui-org/react";
+import Image from 'next/image'
+
+import Cometa from '../assets/cometa1.png'
+import ComputerPlanet from '../assets/computerplanet.png'
+import ProgressImage from '../assets/progress.svg'
+import ShimmerImage from '../assets/shimmer.svg'
+import Star from '../assets/star.png'
+import Universo from '../assets/Universo.png'
 
 function Universe() {
   return (

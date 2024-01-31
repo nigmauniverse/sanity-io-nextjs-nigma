@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
-import Navega from '../assets/bg_navega.png'
-import Mask from '../assets/obj_mask.png'
+
 import NumberOne from '../assets/1.png'
 import NumberTwo from '../assets/2.png'
 import NumberThree from '../assets/3.png'
 import NumberFour from '../assets/4.png'
+import Navega from '../assets/bg_navega.png'
+import Mask from '../assets/obj_mask.png'
 import SunImage from '../assets/sun2.webp'
 
 function Galaxy() {

@@ -1,9 +1,9 @@
 import '~/styles/global.css'
 
-import type { AppProps } from 'next/app'
-import { lazy } from 'react'
-import Head from 'next/head'
 import {NextUIProvider} from '@nextui-org/react'
+import type { AppProps } from 'next/app'
+import Head from 'next/head'
+import { lazy } from 'react'
 
 
 export interface SharedPageProps {
