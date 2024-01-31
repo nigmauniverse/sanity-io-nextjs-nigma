@@ -12,7 +12,7 @@ import Travel from './Travel'
 import Travellers from './Travellers'
 import Footer from './Footer'
 
-function Welcome2() {
+function Welcome() {
     return (
         <>
             <Header />
@@ -33,4 +33,4 @@ function Welcome2() {
     )
 }
 
-export default Welcome2
+export default Welcome

@@ -27,6 +27,7 @@
     "react-dom": "18.2.0",
     "sanity": "3.21.1",
     "sanity-plugin-iframe-pane": "2.6.1",
+    "sharp": "^0.33.2",
     "styled-components": "6.1.1",
     "swiper": "^11.0.5"
   },
