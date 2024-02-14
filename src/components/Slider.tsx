@@ -29,7 +29,6 @@ function Slider() {
         />
       </div>
       <div className="relative">
-
         <Image
           className="absolute top-[3rem] left-[-22%] md:top-[-5rem] lg:top-[0rem] md:left-[-20%] lg:left-[-18%] xl:left-[-22%] 2xl:left-[-15%] w-[15rem] h-[15rem] md:w-[25rem] md:h-[25rem] lg:w-[30rem] lg:h-[30rem] xl:w-[45rem] xl:h-[45rem] 2xl:w-auto 2xl:h-auto 
         object-cover"
@@ -44,10 +43,10 @@ function Slider() {
         />
       </div>
 
-      <div className="flex justify-center ">
+      <div className="flex justify-center">
         <Swiper
           className=" md:w-2/3 2xl:w-1/2 mb-20 mt-28 md:mt-0 xl:my-20"
-          modules={[ A11y, Autoplay, Pagination]}
+          modules={[A11y, Autoplay, Pagination]}
           spaceBetween={50}
           slidesPerView={1}
           // navigation
