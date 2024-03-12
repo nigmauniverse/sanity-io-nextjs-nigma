@@ -10,7 +10,7 @@ import ExperienceCard from './ExperienceCard'
 
 function Travellers() {
     return (
-        <section className=''>
+        <section id='team'>
             <div className="w-full py-20 [background:linear-gradient(180deg,_#000,_rgba(18,_31,_37,_0))]">
                 <div className='container mx-auto px-6 text-center flex flex-col items-center'>
                     <h1 className='text-center text-m3-sys-light-secondary-container text-26xl'>Nuestros Viajeros</h1>

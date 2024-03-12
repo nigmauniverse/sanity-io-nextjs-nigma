@@ -12,6 +12,7 @@ import Testimonials from './Testimonials'
 import Travel from './Travel'
 import Travellers from './Travellers'
 import Universe from './Universe'
+import BtnMensaje from './BtnMensaje'
 
 function Welcome() {
     return (
@@ -30,6 +31,7 @@ function Welcome() {
                 <Travellers />
             </main>
             <Footer />
+            <BtnMensaje />
         </>
     )
 }
