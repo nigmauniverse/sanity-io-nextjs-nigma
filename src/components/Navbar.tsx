@@ -104,13 +104,9 @@ const Navbar = () => {
 							</Link>
 						</div>
 					</div>
-					<div className="rounded-81xl bg-m3-sys-light-secondary-container h-[2.5rem] flex items-center justify-center text-m3-sys-light-on-primary-container">
-						<div className="py-[0.63rem] px-[1.5rem]">
-							<div className="tracking-[0.1px] leading-[1.25rem] font-semibold">
-								Contáctenos
-							</div>
-						</div>
-					</div>
+					<Button className='rounded-81xl bg-m3-sys-light-secondary-container border-none py-2 px-6 cursor-pointer font-semibold font-montserrat text-base'>
+						Contáctenos
+					</Button>
 					<div className="flex ml-2 lg:hidden">
 						<Button
 							className="cursor-pointer text-white bg-[#006971] px-2 min-w-unit-1 border-none rounded-xl inline-flex items-center justify-center"

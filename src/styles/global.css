@@ -175,21 +175,22 @@ html {
   transform: scale(0.9); /* Ajusta el valor de escala según tus preferencias */
 }
 
-.progressBarContainer {
-  grid-area: slider;
-  text-align: center;
-  margin-top: 1px;
-  padding: 1px;
-  font-size: 0.5em;
-}
-
-.progressBar {
-  width: 80%;
-  cursor: pointer;
-  height: 1px;
-  color: rgb(0, 0, 0, 1);
-}
-
 input[type="range"]:focus {
   outline: none; /* Removes the blue border. You should probably do some kind of focus styling for accessibility reasons though. */
+}
+
+@keyframes fadeInOpacity {
+  0% {
+      opacity: 0;
+  }
+  50% {
+      opacity: 0.5;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.custom-image-animation {
+  animation: fadeInOpacity 1s ease-out forwards;
 }

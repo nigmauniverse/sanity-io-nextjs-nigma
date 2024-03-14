@@ -86,50 +86,22 @@ function Universe() {
                             </Tabs>
                         </div>
                         <div className="hidden lg:block relative mt-36">
-                            <div
-                                className="absolute top-0 left-[50%] xl:left-[27.13rem] leading-[2.25rem] font-medium text-m3-sys-light-primary-container flex items-center w-[12.44rem]">
-                                Nigma Planet
-                            </div>
-                            <div
-                                className="absolute top-[21.38rem] left-[50%] xl:left-[26.75rem] leading-[2.25rem] font-medium flex items-center w-[12.38rem]">
-                                Nigma Constellation
-                            </div>
-                            <div
-                                className="absolute top-[12rem] left-[5%] xl:left-40 leading-[2.25rem] font-medium text-right flex items-center w-[13.5rem]">
-                                Nigma Force
-                            </div>
-                            <div className='z-50 absolute top-[0.13rem] left-[40%] xl:left-[24.13rem] h-[25.25rem]'>
+                            <div className='z-50 absolute top-[0.13rem] left-[40%] xl:left-[15rem] 2xl:left-[24.13rem] lg:w-[46rem] xl:w-[55rem] h-[25.25rem]'>
                                 <ProgressBar steps={steps} activeStep={activeStep} setActiveStep={setActiveStep} />
                             </div>
-                            {/* <Image
-                                className="absolute top-[0.13rem] left-[40%] xl:left-[24.13rem] w-[2rem] h-[25.25rem]"
-                                alt=""
-                                src={ProgressImage}
-                            /> */}
-                            <Image
-                                className="absolute top-[-7.8rem] left-[17%] xl:left-[42.2%] 2xl:left-[35.2%] w-[16.56rem] h-[17.93rem]"
-                                alt=""
-                                src={ShimmerImage}
-                            />
                         </div>
 
                     </div>
-
-
-                    <div className='hidden lg:flex flex-col items-center mt-12 lg:mt-0'>
-                        <TabsComponents ruta={NigmaPlanet} titulo="Nigma Planet" contenido="Contenido estratégico digital, impreso y editorial previsto de conceptos disruptivos e innovadores" rutaHover={NigmaPlanetHover} />
-                    </div>
-
                 </div>
-                <div className='mt-16 pt-10 pb-32 flex flex-col justify-center items-center text-center'>
+                <div className='lg:mt-[35rem] pt-10 pb-32 flex flex-col justify-center items-center text-center'>
                     <Image
                         className='w-auto h-auto'
                         alt='Cometa'
                         src={Cometa} />
-                    <h2 className='text-white font-normal'>Conoce todos los mundos que podemos alcanzar</h2>
+                    <h2 className='text-white text-3xl lg:text-26xl font-normal'>Conoce todos los mundos que podemos alcanzar</h2>
                     <Link
                         href="tel:+573172940035"
-                        className="bg-m3-sys-light-secondary-container cursor-pointer px-6 py-3 border-none font-bold rounded-full text-sm no-underline text-black"
+                        className="bg-m3-sys-light-secondary-container cursor-pointer mt-10 lg:mt-5 px-6 py-3 border-none font-bold rounded-full text-sm no-underline text-black"
                     >
                         Hablemos
                     </Link>

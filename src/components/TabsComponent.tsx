@@ -14,7 +14,7 @@ function TabsComponents({ ruta, titulo, contenido, rutaHover }: Props) {
     const [hovered, setHovered] = useState(false);
 
     return (
-        <div className='flex flex-col items-center mt-4 lg:mt-28'>
+        <div className='flex flex-col items-center mt-20 lg:mt-0'>
             <div
                 className={`relative ${hovered ? 'image-container' : ''}`} 
                 onMouseEnter={() => setHovered(true)}
@@ -24,8 +24,8 @@ function TabsComponents({ ruta, titulo, contenido, rutaHover }: Props) {
                     className='transition-all'
                     alt='Computer Planet'
                     src={hovered ? rutaHover : ruta}
-                    width={380}
-                    height={380}
+                    width={350}
+                    height={330}
                 />
             </div>
             <div className='container mx-auto max-w-[22rem] md:max-w-md lg:max-w-sm'>

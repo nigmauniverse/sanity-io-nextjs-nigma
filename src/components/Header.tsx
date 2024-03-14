@@ -81,7 +81,7 @@ function Header() {
       </div>
 
       <div className="relative">
-        <div className="absolute z-20 top-[0rem] md:top-[7.88rem] md:left-[8.63rem]">
+        <div className="absolute top-[0rem] md:top-[7.88rem] md:left-[8.63rem]">
           <Image
             className="absolute top-[10rem] -left-7 md:top-[-8rem] md:left-[-14.5rem] w-[10rem] h-[10rem] md:w-[25rem] md:h-[25rem] lg:w-[30rem] lg:h-[30rem] xl:w-[38rem] xl:h-[38rem] object-cover"
             alt="Sol"
