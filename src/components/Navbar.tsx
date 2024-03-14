@@ -18,7 +18,7 @@ import Link from 'next/link'
 
 const Navbar = () => {
 	return (
-		<div className="container mx-auto">
+		<div className="container z-50 mx-auto relative">
 			<div className="flex gap-6 items-end justify-between border-gray-200 px-4">
 				<Link href="/">
 					<Image
@@ -27,7 +27,7 @@ const Navbar = () => {
 						src={LogoNigmaImage}
 					/>
 				</Link>
-				<nav className="flex z-30 flex-row items-center justify-center text-center mt-3">
+				<nav className="flex relative z-30 flex-row items-center justify-center text-center mt-3">
 					<div className="self-stretch flex-1 lg:flex flex-row items-center justify-end gap-[2rem] lg:gap-[1rem] xl:gap-[2rem] mr-6 hidden ">
 						<Link
 							href="#home"

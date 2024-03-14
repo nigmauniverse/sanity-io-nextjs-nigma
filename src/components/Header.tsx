@@ -11,8 +11,9 @@ import { Button } from '@nextui-org/react'
 
 function Header() {
   return (
-    <header id='home' className="relative md:h-[50rem] lg:h-[40rem] text-center font-montserrat">
-      <Navbar />
+    <>
+    <Navbar />
+    <header id='home' className="relative z-30 md:h-[50rem] lg:h-[40rem] text-center font-montserrat">
 
       <div className="relative">
         <div
@@ -130,6 +131,8 @@ function Header() {
 
       
     </header>
+    </>
+      
   )
 }
 

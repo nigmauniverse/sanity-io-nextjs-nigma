@@ -21,13 +21,13 @@ const Step: React.FC<StepProps> = ({ isActive, label, onClick, containerClass, s
       >
         {isActive && (
           (label === 'Nigma Planet' && (
-            <CustomImage top="-7.8rem" />
+            <CustomImage />
           )) ||
           (label === 'Nigma Constellation' && (
-            <CustomImage top="-7.8rem" />
+            <CustomImage />
           )) ||
           (
-            <CustomImage top="-7.8rem" />
+            <CustomImage />
           )
         )}
       </div>
