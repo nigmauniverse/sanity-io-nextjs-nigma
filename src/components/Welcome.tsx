@@ -18,7 +18,7 @@ function Welcome() {
     return (
         <>
             <Header />
-            <main className='lg:pt-[5rem] 2xl:pt-[10rem]'>
+            <main className='lg:pt-[5rem] 2xl:pt-[0rem]'>
                 <Slider />
                 <Universe />
                 <Allied />

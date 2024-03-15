@@ -1,10 +1,10 @@
 import 'swiper/css'
-// import 'swiper/css/navigation'
+import 'swiper/css/navigation'
 import 'swiper/css/autoplay'
 import 'swiper/css/pagination'
 
 import Image from 'next/image'
-import { A11y, Autoplay, Pagination } from 'swiper/modules'
+import { A11y, Autoplay, Pagination, Navigation } from 'swiper/modules'
 import { Swiper, SwiperSlide } from 'swiper/react'
 
 import Banner1 from '../assets/banner1.png'
@@ -45,19 +45,19 @@ function Slider() {
 
       <div id='mision' className="flex justify-center">
         <Swiper
-          className=" md:w-2/3 2xl:w-1/2 mb-20 mt-28 md:mt-0 xl:my-20"
-          modules={[A11y, Autoplay, Pagination]}
+          className=" md:w-2/3 lg:w-3/4 2xl:w-1/2 mb-20 h-[40rem] md:h-[42rem] lg:h-auto mt-28 md:mt-0 xl:my-20"
+          modules={[A11y, Autoplay, Pagination, Navigation]}
           spaceBetween={50}
           slidesPerView={1}
-          // navigation
-          pagination={{ clickable: true }}
+          navigation
+          // pagination={{ clickable: true }}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
         >
           {slides.map((slide) => (
             <SwiperSlide key={slide.id} >
               <div className='flex flex-col lg:flex-row items-center gap-8'>
                 <Image src={slide.image} alt={`Banner ${slide.id}`} />
-                <p className='text-white max-w-[22rem] md:max-w-none text-center font-semibold text-[20px] md:text-[36px] font-montserrat'>{slide.text}</p>
+                <p className='text-white max-w-[22rem] md:max-w-none text-center font-semibold text-[20px] md:text-[25px] lg:text-[36px] font-montserrat'>{slide.text}</p>
               </div>
             </SwiperSlide>
           ))}

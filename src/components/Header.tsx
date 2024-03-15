@@ -5,15 +5,12 @@ import ManosDiamanteImage from '../assets/ManosDiamante.png'
 import Star from '../assets/star.png'
 import SunImage from '../assets/sun2.webp'
 import Navbar from './Navbar'
-import { Button } from '@nextui-org/react'
-
-
 
 function Header() {
   return (
     <>
     <Navbar />
-    <header id='home' className="relative z-30 md:h-[50rem] lg:h-[40rem] text-center font-montserrat">
+    <header id='home' className="relative z-30 md:h-[40rem] lg:h-[30rem] xl:h-[42rem] text-center font-montserrat">
 
       <div className="relative">
         <div
