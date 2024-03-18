@@ -1,0 +1,48 @@
+
+/* SLIDER STARDUST - PAGE*/
+.swiper-stardust .swiper-button-next {
+    right: 14.5rem !important;
+  }
+  
+  .swiper-stardust .swiper-button-prev {
+    left: 1rem !important;
+  }
+  
+  @media (min-width: 768px) {
+    .swiper-stardust .swiper-button-next {
+      right: 37rem !important;
+    }
+    .swiper-stardust .swiper-button-prev {
+      left: 1rem !important;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .swiper-stardust .swiper-button-next {
+      right: 53rem !important;
+    }
+    .swiper-stardust .swiper-button-prev {
+      left: 1rem !important;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .swiper-stardust .swiper-button-next {
+      right: 56rem !important;
+    }
+    .swiper-stardust .swiper-button-prev {
+      left: 1rem !important;
+    }
+    .swiper-stardust .swiper-button-prev,
+    .swiper-stardust .swiper-button-next {
+      bottom: 0px !important;
+    }
+  }
+
+  .dust {
+    background-image: url('../assets/bg_reloj_arena.png');
+    width: 100%;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }

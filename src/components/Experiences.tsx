@@ -13,6 +13,7 @@ function Experiences() {
   return (
     <section
       className="experiences h-[50rem] lg:h-[140rem]"
+      id='productos'
     >
       <div className='container mx-auto'>
         <h1 className='text-center py-16 m-0 text-m3-sys-light-secondary-container text-26xl'>Últimas Experiencias</h1>

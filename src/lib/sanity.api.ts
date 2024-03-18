@@ -25,7 +25,7 @@ export const apiVersion =
 // The secret protects against unauthorized access to your draft content and have a lifetime of 60 minutes, to protect against bruteforcing.
 export const previewSecretId: `${string}.${string}` = 'preview.secret'
 
-function assertValue<T>(v: T | undefined, errorMessage: string): T {
+function assertValue<T>(v: T, errorMessage: string): T {
   if (v === undefined) {
     throw new Error(errorMessage)
   }

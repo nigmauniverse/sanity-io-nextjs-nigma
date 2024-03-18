@@ -1,0 +1,63 @@
+
+/* SLIDER - PAGE */
+
+.swiper-button-next {
+    right: 9rem !important;
+  }
+  .swiper-button-prev {
+    left: 9rem !important;
+  }
+  
+  @media (min-width: 768px) {
+    .swiper-button-next {
+      right: 13rem !important;
+    }
+    .swiper-button-prev {
+      left: 12rem !important;
+    }
+  
+    .swiper-button-prev,
+    .swiper-button-next {
+      bottom: 0rem !important;
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .swiper-button-next {
+      right: 19rem !important;
+    }
+    .swiper-button-prev {
+      left: 20rem !important;
+    }
+  
+    .swiper-button-prev,
+    .swiper-button-next {
+      bottom: 0rem !important;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .swiper-button-next {
+      right: 22rem !important;
+    }
+    .swiper-button-prev {
+      left: 25rem !important;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      bottom: 50px !important;
+    }
+  }
+  
+  @media (min-width: 1440px) {
+    .swiper-button-next {
+      right: 26rem !important;
+    }
+    .swiper-button-prev {
+      left: 26rem !important;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+      bottom: 0rem !important;
+    }
+  }

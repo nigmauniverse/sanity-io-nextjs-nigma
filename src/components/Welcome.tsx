@@ -12,12 +12,13 @@ import Testimonials from './Testimonials'
 import Travel from './Travel'
 import Travellers from './Travellers'
 import Universe from './Universe'
+import BtnMensaje from './BtnMensaje'
 
 function Welcome() {
     return (
         <>
             <Header />
-            <main className='lg:pt-[5rem] 2xl:pt-[10rem]'>
+            <main className='lg:pt-[5rem] 2xl:pt-[0rem]'>
                 <Slider />
                 <Universe />
                 <Allied />
@@ -30,6 +31,7 @@ function Welcome() {
                 <Travellers />
             </main>
             <Footer />
+            <BtnMensaje />
         </>
     )
 }

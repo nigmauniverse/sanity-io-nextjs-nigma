@@ -1,12 +1,14 @@
 // Import Swiper React components
 // Import Swiper styles
 import 'swiper/css';
-import 'swiper/css/pagination';
+// import 'swiper/css/pagination';
+import 'swiper/css/navigation'
+
 
 import { Card } from '@nextui-org/react'
 import Image from 'next/image';
 // import required modules
-import { Pagination } from 'swiper/modules';
+import {  Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import Luna from '../assets/moon.png';
@@ -23,11 +25,12 @@ function StarDust() {
                 <Swiper
                     slidesPerView={2}
                     spaceBetween={10}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    modules={[Pagination]}
-                    className="mySwiper my-24 !pb-14 flex max-w-5xl gap-9"
+                    // pagination={{
+                    //     clickable: true,
+                    // }}
+                    modules={[ Navigation]}
+                    navigation
+                    className="mySwiper swiper-stardust my-24 !pb-14 flex max-w-5xl gap-9"
                     breakpoints={{
                         390: {
                           slidesPerView: 1,
