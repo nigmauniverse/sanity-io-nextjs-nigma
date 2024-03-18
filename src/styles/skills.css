@@ -1,0 +1,18 @@
+.skills {
+    display: flex;
+    width: 100%;
+    padding: 84px 32px 64px 32px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 64px;
+    border-radius: 200px 200px 0px 0px;
+    background: linear-gradient(148deg, #ffe083 19.29%, #e8c349 126.15%);
+  }
+
+  
+@media (min-width: 1024px) {
+  .skills {
+    border-radius: 65% 65% 0px 0px;
+  }
+}

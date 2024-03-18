@@ -11,7 +11,7 @@ import SunImage from '../assets/sun2.webp'
 
 function Galaxy() {
     return (
-        <section className='relative h-[90rem] md:h-[85rem] lg:h-[80rem] mt-48 galaxia z-50'>
+        <section className='relative h-[90rem] md:h-[85rem] lg:h-[80rem] mt-28 md:mt-48 galaxia z-50'>
             <div className='relative'>
                 <Image
                     className='absolute z-50 left-[0%] lg:left-[-20%] xl:left-[0%] w-full lg:w-[90rem] xl:w-full h-[30rem] md:h-[85rem] lg:h-[80rem] object-fill opacity-100'

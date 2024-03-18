@@ -1,4 +1,12 @@
 import '~/styles/global.css'
+import '~/styles/swiper-button.css'
+import '~/styles/testimonials.css'
+import '~/styles/slider.css'
+import '~/styles/stardust.css'
+import '~/styles/header.css'
+import '~/styles/universe.css'
+import '~/styles/experiences.css'
+import '~/styles/skills.css'
 
 import { NextUIProvider } from '@nextui-org/react'
 import type { AppProps } from 'next/app'
