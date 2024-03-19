@@ -21,65 +21,65 @@ function Header() {
         <div className="absolute top-[-0.77rem] left-[8.33rem] rounded-[50%] [background:linear-gradient(128.69deg,_rgba(255,_230,_10,_0.34),_rgba(2,_2,_0,_0))] [filter:blur(30px)] md:[filter:blur(66px)] w-[22.42rem] h-[22.42rem] [transform:_rotate(155deg)] md:[transform:_rotate(135deg)] [transform-origin:0_0] opacity-[0.5]" />
         <div className="absolute top-[17.98rem] left-[66.44rem] rounded-[50%] [background:linear-gradient(128.69deg,_rgba(255,_230,_10,_0.34),_rgba(2,_2,_0,_0))] [filter:blur(94px)] w-[22.42rem] h-[22.42rem] [transform:_rotate(45deg)] [transform-origin:0_0] opacity-[0.5]" />
         <div className="absolute top-[-12.19rem] md:top-[-30.19rem] rotate-[20deg] left-[9.38rem] md:left-[18.38rem] xl:left-[27.38rem] rounded-[50%] [background:linear-gradient(128.69deg,_#4dd9e6,_rgba(2,_2,_0,_0))] [filter:blur(8px)] md:[filter:blur(20px)] w-[9.69rem] md:w-[37.69rem] h-[19.69rem] md:h-[58.69rem] opacity-[0.16]" />
-        <div className="absolute top-[5.2rem] md:top-[0.2rem] xl:top-[4.2rem] right-[-20px] sm:right-11 md:-right-6 lg:-right-2 xl:-right-20 2xl:-right-8 w-[12.13rem] md:w-[20.13rem] xl:w-[28.13rem] rounded-[50%] h-[12.13rem] md:h-[22.13rem] xl:h-[28.13rem] object-cover opacity-30 [background:linear-gradient(129deg,_rgba(255,_230,_10,_0.34)_31.03%,_rgba(2,_2,_0,_0.00)_73.69%)] [filter:blur(5px)] md:[filter:blur(10px)]" />
+        <div className="absolute top-[0.2rem] md:top-[-2.2rem] xl:top-[0.2rem] right-[-20px] sm:right-11 md:-right-6 lg:-right-2 xl:-right-20 2xl:-right-8 w-[12.13rem] md:w-[20.13rem] xl:w-[28.13rem] rounded-[50%] h-[12.13rem] md:h-[22.13rem] xl:h-[28.13rem] object-cover opacity-30 [background:linear-gradient(129deg,_rgba(255,_230,_10,_0.34)_31.03%,_rgba(2,_2,_0,_0.00)_73.69%)] [filter:blur(5px)] md:[filter:blur(10px)]" />
       </div>
 
       <div className="relative z-10">
         <Image
-          className="absolute top-[2rem] left-[0%] md:top-[0rem] md:left-[0%] w-[5rem] h-[5rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
+          className="absolute top-[-2rem] left-[0%] md:top-[-4rem] md:left-[0%] w-[5rem] h-[5rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
           alt="star"
           src={Star}
         />
         <Image
-          className="absolute top-[4rem] left-[15%] md:top-[5rem] md:left-[9%] w-[5rem] h-[5rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
+          className="absolute top-[0rem] left-[15%] md:top-[1rem] md:left-[9%] w-[5rem] h-[5rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
           alt="star"
           src={Star}
         />
 
         <Image
-          className="absolute top-[2rem] left-[35%] md:top-[0] md:left-[15%] w-[5rem] h-[5rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
+          className="absolute top-[-2rem] left-[35%] md:top-[-4rem] md:left-[15%] w-[5rem] h-[5rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
           alt="star"
           src={Star}
         />
         <Image
-          className="absolute top-[7rem] left-[45%] md:top-[2rem] md:left-[28%] w-[5rem] h-[5rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
+          className="absolute top-[1rem] left-[45%] md:top-[-2rem] md:left-[28%] w-[5rem] h-[5rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
           alt="star"
           src={Star}
         />
         <Image
-          className="absolute top-[7rem] left-[65%] md:top-[2rem] md:left-[43%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
+          className="absolute top-[3rem] left-[65%] md:top-[-2rem] md:left-[43%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
           alt="star"
           src={Star}
         />
         <Image
-          className="absolute top-[0rem] left-[65%] md:top-[-3rem] md:left-[50%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
+          className="absolute top-[-4rem] left-[65%] md:top-[-7rem] md:left-[50%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
           alt="star"
           src={Star}
         />
         <Image
-          className="absolute top-[4rem] left-[85%] md:top-[-3rem] md:left-[65%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
+          className="absolute top-[0rem] left-[85%] md:top-[-7rem] md:left-[65%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
           alt="star"
           src={Star}
         />
         <Image
-          className="hidden absolute md:flex  md:top-[0rem] md:left-[75%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
+          className="hidden absolute md:flex  md:top-[-4rem] md:left-[75%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
           alt="star"
           src={Star}
         />
         <Image
-          className="hidden absolute md:flex  md:top-[-3rem] md:left-[85%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
+          className="hidden absolute md:flex  md:top-[-7rem] md:left-[85%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
           alt="star"
           src={Star}
         />
         <Image
-          className="hidden absolute md:flex  md:top-[3rem] md:left-[92%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
+          className="hidden absolute md:flex  md:top-[-1rem] md:left-[92%] w-[4rem] h-[4rem] lg:w-[9rem] lg:h-[9rem] opacity-40 object-cover"
           alt="star"
           src={Star}
         />
       </div>
 
       <div className="relative">
-        <div className="absolute top-[0rem] md:top-[7.88rem] md:left-[8.63rem]">
+        <div className="absolute -top-[4.5rem] md:top-[7.88rem] md:left-[8.63rem]">
           <Image
             className="absolute top-[10rem] -left-7 md:top-[-8rem] md:left-[-14.5rem] w-[10rem] h-[10rem] md:w-[25rem] md:h-[25rem] lg:w-[30rem] lg:h-[30rem] xl:w-[38rem] xl:h-[38rem] object-cover"
             alt="Sol"
@@ -119,7 +119,7 @@ function Header() {
             src={HeroImage}
           />
           <Image
-            className="absolute -top-4 md:-top-[6rem] left-[53%] md:left-[64%] lg:left-[68%] xl:left-[50%] 2xl:left-[55%] w-1/2 h-auto md:w-[23rem] md:h-[23rem] 2xl:w-[25rem] 2xl:h-[25rem]"
+            className="absolute -top-8 md:-top-[6rem] left-[53%] md:left-[64%] lg:left-[68%] xl:left-[50%] 2xl:left-[55%] w-1/2 h-auto md:w-[23rem] md:h-[23rem] 2xl:w-[25rem] 2xl:h-[25rem]"
             alt="Sol"
             src={SunImage}
           />
